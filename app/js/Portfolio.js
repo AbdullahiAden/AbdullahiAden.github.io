@@ -11,18 +11,18 @@ var strong = document.querySelector("strong");
 var dev = false;
 
 
-setInterval(function(){
-    // if the text is developer, change to designer  
-    if (dev){
-        strong.textContent="Develop";
-    }else{
-        strong.textContent="Design"
-        strong.style.color="#34A1B9"
-    } 
+// setInterval(function(){
+//     // if the text is developer, change to designer  
+//     if (dev){
+//         strong.textContent="Develop";
+//     }else{
+//         strong.textContent="Design"
+//         strong.style.color="#34A1B9"
+//     } 
 
-    dev=!dev; // here we are changing our boolean evaluator to contradict the last decision, 
+//     dev=!dev; // here we are changing our boolean evaluator to contradict the last decision, 
 
-},1000)
+// },1000)
 
 
 
