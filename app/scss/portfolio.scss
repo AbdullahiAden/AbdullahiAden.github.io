@@ -280,9 +280,10 @@ body {
 
 // ** quiz project
 
-.container {
+.quizContainer {
     margin: 3rem;
     border: 1px solid yellow;
+    width: 1000px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25% ;
     grid-template-rows: 25% 25% 25% 25% ;
@@ -290,60 +291,73 @@ body {
     // grid-template-rows: 1fr 1fr 1fr;
 
     .project-text {
-        // background-color: green;
+        border:1px solid green;
         // width: 300px;
         height: fit-content;
-        margin: 1rem;
+        margin: 3rem;
         grid-column-start:1 ;
         grid-column-end: 3;
         padding: 3rem;
         grid-row-start: 1;
         grid-row-end: 1;
+        font-size: small;
 
-        p {
-            // width: 200px;
-            font-size: small;
+        // p {
             
-        }
+        //     // width: 200px;
+            
+        // }
     }
     .imgCon{
         grid-column-start: 3;
         grid-column-end: 4;
+        margin:  3rem -1rem ;
         width: 500px;
     }
 
 }
 // ***** use flexbox here
-.container2 {
-    margin: 3rem;
-    border: 1px solid yellow;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% ;
-    grid-template-rows: 25% 25% 25% 25% ;
-    // grid-template-columns: 1fr 1fr 1f;
-    // grid-template-rows: 1fr 1fr 1fr;
+.quizContainer2 {
+  display: flex;
+  flex-direction: row-reverse;
+
+  
+  width: 1000px;
+  border: 1px solid yellow;
+  margin: 3rem;
+//   padding: 3rem;
+  justify-content: space-between;
+  align-items: center;
+//   margin-left: auto;
 
     .project-text2 {
-        // background-color: green;
-        // width: 300px;
+        margin: 2rem;
+        // padding: 1rem;
+        border: 1px solid green;
+        // width: 700px;
         height: fit-content;
-        margin: 1rem;
-        grid-column-start:1 ;
-        grid-column-end: 3;
-        padding: 3rem;
-        grid-row-start: 1;
-        grid-row-end: 1;
-
+        // margin: 1rem;
+      
         p {
-            // width: 200px;
+            width: 400px;
+            align-items: center;
             font-size: small;
+            padding: 2rem;
             
         }
+        flex-direction: column;
+        
     }
     .imgCon2{
-        grid-column-start: 3;
-        grid-column-end: 4;
+        // background-color: black;
+        // border-radius: 10%;
+        padding: 1rem;
+        // margin-bottom:1rem ;
         width: 500px;
+        height: fit-content;
+    }
+    .imgCon3{
+        padding-top: 1rem;
     }
 
 }
