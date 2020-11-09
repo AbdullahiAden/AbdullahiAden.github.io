@@ -12,23 +12,40 @@ $secondary-color:#0a272d;
 $light-blue: #34A1B9;
 // $dark-primary: #0a272d;
 
-body {
+$mobile:320px;
+$screenCollapse:516px;
 
+
+
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin screenCollapse {
+    @media (max-width: #{$screenCollapse}) {
+        @content;
+    }
+}
+
+body {
     background: $primary-color;
     font-family: $font-stack;
     color: white;
 }
 
-.introCon {
-    // background-image: url(".LANDING PAGE.png");
-    background-size: cover;
-    height: 100vh;
+// .introCon {
+//     // background-image: url(".LANDING PAGE.png");
+//     background-size: cover;
+//     height: 100vh;
 
-    // *make this smaller on 
-    padding: 12rem;
+//     // *make this smaller on 
+//     // padding: 12rem;
 
 
-}
+// }
 
 /* navbar bg color */
 
@@ -102,30 +119,38 @@ body {
     // font-weight: 700;
 }
 
-.ContactButt {
-    background-color: $light-blue;
-    width: 150px;
-    color: white;
+.buttons {
+
+    @include mobile {
+        display: grid;
+    }
+
+    .contactButt {
+        background-color: $light-blue;
+        width: 150px;
+        color: white;
+    }
+
+    .contactButt:hover {
+        // background-color: none;
+        color:$secondary-color ;
+
+    }
+
+    .workButt {
+        border: 1px solid $light-blue;
+        color: white;
+        width: 150px;
+
+        &:hover {
+            color: $light-blue;
+        }
+    }
+
+
 
 }
 
-.ContactButt:hover {
-    background-color: none;
-
-}
-
-.WorkButt {
-    border: 1px #34A1B9 solid;
-    /* margin-top: 2rem; */
-    color: white;
-    width: 150px;
-    stroke-width: .2;
-
-}
-
-.WorkButt:hover {
-    color: #34A1B9;
-}
 
 
 
@@ -167,6 +192,7 @@ body {
 
 // }
 
+
 .workText {
     font-size: 50px;
     -webkit-text-fill-color: transparent;
@@ -178,8 +204,8 @@ body {
 
 .workCon {
     background-color: black;
-    margin: 3rem;
     padding: 1rem;
+    margin: 3rem;
 
 
 
@@ -237,12 +263,14 @@ body {
         }
 
         .sourceBtn {
-            position: relative;
             // extends style from workBtn
-            @extend .WorkButt;
-            // border: 1px solid $light-blue;
+            @extend .workButt;
+            position: relative;
             width: 100px;
             margin: 1rem;
+            color: white;
+            border: 1px solid $light-blue;
+
 
             &:hover {
                 // border:solid 1px white;
@@ -251,84 +279,99 @@ body {
         }
 
 
+    }
+}
 
+// ???????????????????????????????????????????????????? 
+.lastCon {
+    border: 1px solid red;
+    margin-left: 3rem;
+}
 
+.aboutCon {
+    width: 500px;
+    margin: 2rem auto;
+    border: 1px solid white;
+}
 
+.contact-form {
+    width: 500px;
+    margin: auto;
 
+    .form-control {
+        margin-bottom: 1rem;
+        background-color: $secondary-color;
+        border-radius: 5px;
 
     }
 }
 
-
-
-
-
-
-// #wrapper {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-columns: 20% 20% 20% 20% 20%;
-//     grid-template-rows: 20% 20% 20% 20% 20%;
-// }
-// .first {
-//     grid-row-start: 2;
-//     grid-row-end: 3;
-//     // grid-column-start: 1;
-//     // grid-column-end: 2;
-//     background-color: #fff;
-// }
+// footer
+.card {
+    background-color: $secondary-color;
+    margin-top: 3rem;
+    color: darken($color: $secondary-color, $amount: 10%);
+    text-align: center;
+}
 
 // ** quiz project
 
 .quizContainer {
-    margin: 3rem;
+    margin: 4rem auto;
     border: 1px solid yellow;
     width: 1000px;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25% ;
-    grid-template-rows: 25% 25% 25% 25% ;
-    // grid-template-columns: 1fr 1fr 1f;
-    // grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 
     .project-text {
-        border:1px solid green;
-        // width: 300px;
-        height: fit-content;
-        margin: 3rem;
-        grid-column-start:1 ;
-        grid-column-end: 3;
+        border: 1px solid green;
+        margin-top: 2rem;
         padding: 3rem;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        font-size: small;
+        font-size: large;
 
-        // p {
-            
-        //     // width: 200px;
-            
-        // }
+        h4 {
+            text-decoration: underline $light-blue;
+        }
     }
-    .imgCon{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        margin:  3rem -1rem ;
-        width: 500px;
+
+    .imgCon {
+        margin-top: 2rem;
+    }
+
+    @include mobile {
+        width: 320px;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+        .project-text {
+            padding: 1rem;
+
+        }
+
+
+        .imgCon {
+            width: 300px;
+            margin: auto;
+
+        }
     }
 
 }
+
 // ***** use flexbox here
 .quizContainer2 {
-  display: flex;
-  flex-direction: row-reverse;
+    margin: auto;
 
-  
-  width: 1000px;
-  border: 1px solid yellow;
-  margin: 3rem;
-//   padding: 3rem;
-  justify-content: space-between;
-  align-items: center;
-//   margin-left: auto;
+    display: flex;
+    flex-direction: row-reverse;
+
+
+    width: 1000px;
+    border: 1px solid yellow;
+    //   padding: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    //   margin-left: auto;
 
     .project-text2 {
         margin: 2rem;
@@ -336,19 +379,22 @@ body {
         border: 1px solid green;
         // width: 700px;
         height: fit-content;
+
         // margin: 1rem;
-      
+
         p {
             width: 400px;
             align-items: center;
-            font-size: small;
+            font-size: large;
             padding: 2rem;
-            
+
         }
+
         flex-direction: column;
-        
+
     }
-    .imgCon2{
+
+    .imgCon2 {
         // background-color: black;
         // border-radius: 10%;
         padding: 1rem;
@@ -356,8 +402,33 @@ body {
         width: 500px;
         height: fit-content;
     }
-    .imgCon3{
+
+    .imgCon3 {
         padding-top: 1rem;
+    }
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+
+        .imgCon2 {
+            width: 320px;
+        }
+
+
+
+        .project-text2 {
+            width: 320px;
+            margin: 0;
+
+
+            p {
+                width: 320px;
+            }
+        }
+
+
     }
 
 }
@@ -371,29 +442,61 @@ h2 span {
     font-family: Monoton, cursive;
 }
 
-@media all and (min-width:575px) {
+// untill it hits, 
+@media all and (max-width:500px) {
+    .introCon {
+        margin: 1rem 3rem;
+        padding: none;
+        height: auto;
+        width: 200px;
+        // border: 1px solid yellow;
 
-    .projects {
-        position: relative;
-        border: 1px solid blue;
+        .heading {
 
+            font-size: small;
+            border: 1px solid pink;
+            width: 300px;
+
+
+        }
     }
 
-    .projectName {
-        // background-color: $secondary-color;
-        // height: 20px;
-        // width: fit-content;
-        //  **  change the top , bottom
-
+    .workCon {
+        // border: 1px solid gold;
+        width: 400px;
+        margin: 2rem;
     }
 
-    .projectDescription {
-        // background-color: gold;
+    .aboutCon {
+        width: 300px;
+        margin: 3rem auto;
     }
 
+    .contact-form {
+        width: 300px;
+        margin: auto;
+        flex-direction: column;
+
+        .row {
+
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    // ** project quiz 
+    // .quizContainer {
+    //     grid-auto-columns: auto;
+    // }
+
+    // .quizContainer2 {
+    //     flex-direction: column;
+    //     flex-wrap: wrap;
+    // }
 }
 
-//  under 500px,stays so, good mobile view 
 @media all and (max-width:767px) {
     .navbar-dark .navbar-brand {
         margin-left: 1rem;
@@ -401,8 +504,45 @@ h2 span {
     }
 
     .introCon {
-        margin-top: 5rem;
-        padding: 1rem;
+        margin: 5rem 3rem;
+        padding: none;
+        height: auto;
+        width: 500px;
+        // border: 1px solid yellow;
+    }
+
+    .heading {
+
+        font-size: 2em;
+        border: 1px solid pink;
+        width: 400px;
+    }
+
+    .aboutCon {
+        width: 300px;
+        margin: 3rem auto;
+    }
+
+    .contact-form {
+        width: 300px;
+        margin: auto;
+        flex-direction: column;
+
+        .row {
+
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+
+@media all and (min-width:767px) {
+    .introCon {
+        margin: 5rem 3rem;
+        padding: none;
         height: auto;
     }
 
@@ -414,71 +554,66 @@ h2 span {
         }
     }
 
-    .workCon {
-        margin: 1rem;
-        padding: none;
-
-        .projectName {
-            font-weight: smaller;
-        }
-
-        .projectDescription {
-            font-weight: small;
-        }
-    }
-
-
 }
 
 // *********** resposive work .....................
-@media all and (min-width:650px) {
-    .introCon {
-        padding: 7rem;
-        height: auto;
+// @media all and (min-width:650px) {
+//     .introCon {
+//         padding: 7rem;
+//         height: auto;
 
-    }
+//     }
 
-    .heading {
-        font-size: 10px;
-        text-transform: $light-blue;
+//     .heading {
+//         font-size: 10px;
+//         text-transform: $light-blue;
 
-        h1 {
-            font-weight: 400px;
-        }
-    }
+//         h1 {
+//             font-weight: 400px;
+//         }
+//     }
 
 
-}
+// }
 
-// above 500px, stays so until next breakpoint bad for mobile screens
-@media all and (min-width:767px) {
-    .navbar-dark .navbar-brand {
-        margin-left: 1rem;
+// // above 500px, stays so until next breakpoint bad for mobile screens
+// @media all and (min-width:767px) {
+//     .navbar-dark .navbar-brand {
+//         margin-left: 1rem;
 
-        // border-bottom: solid 1px none;
-    }
+//         // border-bottom: solid 1px none;
+//     }
 
-    .introCon {
-        padding: 4rem 2rem;
-        margin-top: 2rem;
-        height: auto;
+//     .introCon {
+//         padding: 4rem 2rem;
+//         margin-top: 2rem;
+//         height: auto;
 
-    }
+//     }
 
-}
+// }
 
-// above 1020px it stays,
+// // above 1020px it stays,
 
 @media all and (min-width:1020px) {
-    .introCon {
-        padding: 7rem;
-        height: auto;
+    // .introCon {
+    //     margin: rem 0;
+    //     height: auto;
 
+    .heading {
+        margin-top: 5rem;
+        font-weight: 700px;
+        // font-size: 2em;
+        border: 1px solid red;
     }
 
-    .navbar-dark .navbar-brand {
-        border-bottom: none;
-    }
+    // }
+
+    // .navbar-dark .navbar-brand {
+    //     border-bottom: none;
+    // }
+
+
 
 
 

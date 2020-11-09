@@ -7164,11 +7164,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white; }
 
-.introCon {
-  background-size: cover;
-  height: 100vh;
-  padding: 12rem; }
-
 /* navbar bg color */
 .bg-dark {
   background-color: #0a272d !important;
@@ -7209,23 +7204,24 @@ body {
 .navbar-dark .navbar-brand {
   color: white; }
 
-.ContactButt {
+@media (max-width: 320px) {
+  .buttons {
+    display: grid; } }
+
+.buttons .contactButt {
   background-color: #34A1B9;
   width: 150px;
   color: white; }
 
-.ContactButt:hover {
-  background-color: none; }
+.buttons .contactButt:hover {
+  color: #0a272d; }
 
-.WorkButt, .workCon .projects .sourceBtn {
-  border: 1px #34A1B9 solid;
-  /* margin-top: 2rem; */
+.buttons .workButt, .buttons .workCon .projects .sourceBtn, .workCon .projects .buttons .sourceBtn {
+  border: 1px solid #34A1B9;
   color: white;
-  width: 150px;
-  stroke-width: .2; }
-
-.WorkButt:hover, .workCon .projects .sourceBtn:hover {
-  color: #34A1B9; }
+  width: 150px; }
+  .buttons .workButt:hover, .buttons .workCon .projects .sourceBtn:hover, .workCon .projects .buttons .sourceBtn:hover {
+    color: #34A1B9; }
 
 .social-container {
   width: 400px;
@@ -7254,8 +7250,8 @@ body {
 
 .workCon {
   background-color: black;
-  margin: 3rem;
-  padding: 1rem; }
+  padding: 1rem;
+  margin: 3rem; }
   .workCon .projects {
     position: relative;
     padding-bottom: 1rem; }
@@ -7290,39 +7286,67 @@ body {
     .workCon .projects .sourceBtn {
       position: relative;
       width: 100px;
-      margin: 1rem; }
+      margin: 1rem;
+      color: white;
+      border: 1px solid #34A1B9; }
       .workCon .projects .sourceBtn:hover {
         color: #34A1B9; }
 
+.lastCon {
+  border: 1px solid red;
+  margin-left: 3rem; }
+
+.aboutCon {
+  width: 500px;
+  margin: 2rem auto;
+  border: 1px solid white; }
+
+.contact-form {
+  width: 500px;
+  margin: auto; }
+  .contact-form .form-control {
+    margin-bottom: 1rem;
+    background-color: #0a272d;
+    border-radius: 5px; }
+
+.card {
+  background-color: #0a272d;
+  margin-top: 3rem;
+  color: #010303;
+  text-align: center; }
+
 .quizContainer {
-  margin: 3rem;
+  margin: 4rem auto;
   border: 1px solid yellow;
   width: 1000px;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%; }
+  grid-template-columns: 1fr 2fr; }
   .quizContainer .project-text {
     border: 1px solid green;
-    height: fit-content;
-    margin: 3rem;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    margin-top: 2rem;
     padding: 3rem;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    font-size: small; }
+    font-size: large; }
+    .quizContainer .project-text h4, .quizContainer .project-text .h4 {
+      text-decoration: underline #34A1B9; }
   .quizContainer .imgCon {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    margin: 3rem -1rem;
-    width: 500px; }
+    margin-top: 2rem; }
+  @media (max-width: 320px) {
+    .quizContainer {
+      width: 320px;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem; }
+      .quizContainer .project-text {
+        padding: 1rem; }
+      .quizContainer .imgCon {
+        width: 300px;
+        margin: auto; } }
 
 .quizContainer2 {
+  margin: auto;
   display: flex;
   flex-direction: row-reverse;
   width: 1000px;
   border: 1px solid yellow;
-  margin: 3rem;
   justify-content: space-between;
   align-items: center; }
   .quizContainer2 .project-text2 {
@@ -7333,7 +7357,7 @@ body {
     .quizContainer2 .project-text2 p {
       width: 400px;
       align-items: center;
-      font-size: small;
+      font-size: large;
       padding: 2rem; }
   .quizContainer2 .imgCon2 {
     padding: 1rem;
@@ -7341,6 +7365,18 @@ body {
     height: fit-content; }
   .quizContainer2 .imgCon3 {
     padding-top: 1rem; }
+  @media (max-width: 320px) {
+    .quizContainer2 {
+      display: flex;
+      flex-direction: column;
+      width: 320px; }
+      .quizContainer2 .imgCon2 {
+        width: 320px; }
+      .quizContainer2 .project-text2 {
+        width: 320px;
+        margin: 0; }
+        .quizContainer2 .project-text2 p {
+          width: 320px; } }
 
 hr {
   border: 2px solid #34A1B9; }
@@ -7348,52 +7384,69 @@ hr {
 h2 span, .h2 span {
   font-family: Monoton, cursive; }
 
-@media all and (min-width: 575px) {
-  .projects {
-    position: relative;
-    border: 1px solid blue; } }
+@media all and (max-width: 500px) {
+  .introCon {
+    margin: 1rem 3rem;
+    padding: none;
+    height: auto;
+    width: 200px; }
+    .introCon .heading {
+      font-size: small;
+      border: 1px solid pink;
+      width: 300px; }
+  .workCon {
+    width: 400px;
+    margin: 2rem; }
+  .aboutCon {
+    width: 300px;
+    margin: 3rem auto; }
+  .contact-form {
+    width: 300px;
+    margin: auto;
+    flex-direction: column; }
+    .contact-form .row {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 @media all and (max-width: 767px) {
   .navbar-dark .navbar-brand {
     margin-left: 1rem;
     border-bottom: solid 1px #34A1B9; }
   .introCon {
-    margin-top: 5rem;
-    padding: 1rem;
+    margin: 5rem 3rem;
+    padding: none;
+    height: auto;
+    width: 500px; }
+  .heading {
+    font-size: 2em;
+    border: 1px solid pink;
+    width: 400px; }
+  .aboutCon {
+    width: 300px;
+    margin: 3rem auto; }
+  .contact-form {
+    width: 300px;
+    margin: auto;
+    flex-direction: column; }
+    .contact-form .row {
+      width: 300px;
+      display: flex;
+      flex-direction: column; } }
+
+@media all and (min-width: 767px) {
+  .introCon {
+    margin: 5rem 3rem;
+    padding: none;
     height: auto; }
   .heading {
     font-size: smaller; }
     .heading h1, .heading .h1 {
-      font-weight: 400; }
-  .workCon {
-    margin: 1rem;
-    padding: none; }
-    .workCon .projectName {
-      font-weight: smaller; }
-    .workCon .projectDescription {
-      font-weight: small; } }
-
-@media all and (min-width: 650px) {
-  .introCon {
-    padding: 7rem;
-    height: auto; }
-  .heading {
-    font-size: 10px;
-    text-transform: #34A1B9; }
-    .heading h1, .heading .h1 {
-      font-weight: 400px; } }
-
-@media all and (min-width: 767px) {
-  .navbar-dark .navbar-brand {
-    margin-left: 1rem; }
-  .introCon {
-    padding: 4rem 2rem;
-    margin-top: 2rem;
-    height: auto; } }
+      font-weight: 400; } }
 
 @media all and (min-width: 1020px) {
-  .introCon {
-    padding: 7rem;
-    height: auto; }
-  .navbar-dark .navbar-brand {
-    border-bottom: none; } }
+  .heading {
+    margin-top: 5rem;
+    font-weight: 700px;
+    border: 1px solid red; } }
