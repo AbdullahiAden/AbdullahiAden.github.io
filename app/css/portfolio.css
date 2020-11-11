@@ -7466,7 +7466,7 @@ hr {
     margin: 5rem 3rem;
     padding: none;
     height: auto;
-    width: 500px; }
+    width: 400px; }
   .heading {
     font-size: 2em;
     width: 400px; }
@@ -7498,12 +7498,13 @@ hr {
 
 @media all and (min-width: 1020px) {
   div.introCon {
-    margin: 7rem auto;
-    width: 2000px; }
+    margin: 7rem auto; }
   .heading {
     margin-top: 5rem;
     width: 100%; }
     .heading h1, .heading .h1 {
       font-size: 2rem; }
       .heading h1 .undertext, .heading .h1 .undertext {
-        font-size: 3rem; } }
+        font-size: 3rem; }
+  .education {
+    width: 900px; } }
