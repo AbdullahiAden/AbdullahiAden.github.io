@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='viewport'  content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' >
-    
-    
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+
+
     <title>Portfolio</title>
 
     <!-- google fonts -->
@@ -35,10 +35,10 @@
         <!-- id to reference as the data-target -->
         <div class="collapse navbar-collapse justify-content-end p-0 " id="navlinks">
 
-            <a class="nav-link " href="#workCon">Work</a>
-            <a class="nav-link " href="#">Contact</a>
-            <a class="nav-link " href="#">About</a>
-            <a class="nav-link " href="#">Education</a>
+            <a class="nav-link " href="#workSection">Work</a>
+            <a class="nav-link " href="#contactSection">Contact</a>
+            <a class="nav-link " href="#aboutSection">About</a>
+            <a class="nav-link " href="#educationSection">Education</a>
 
         </div>
 
@@ -58,16 +58,17 @@
             </div>
 
             <div class="buttons  ">
-                <button class=" ContactButt  btn btn-lg  mr-4 mr-md-5">Contact</button>
                 <!-- class for margin.top on screen size -->
-                <button class=" WorkButt btn btn-lg my-3  mt-md-3  ">See Work</button>
+                <a href="#contactSection"> <button class=" ContactButt  btn btn-lg  mr-4 mr-md-5">Contact</button></a>
+                <a href="#workSection"><button class=" WorkButt btn btn-lg my-3  mt-md-3  ">See Work</button></a>
 
             </div>
 
             <div class="social-container mt-3 ">
                 <ul class="social-icons">
                     <li><a href="https://github.com/AbdullahiAden"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/abdullahi-aden-6901441b4/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/abdullahi-aden-6901441b4/"><i
+                                class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
 
@@ -79,7 +80,7 @@
 
     <!-- work section -->
 
-    <div class="workCon">
+    <div class="workCon" id="workSection">
         <section class="workJump text-center">
             <h2>
                 <span class="workText">Recent Work</span>
@@ -96,9 +97,11 @@
                     <div class="projectName">Quiz App </div>
                     <p class="projectDescription">Lorem ipsum dolor sit amet.</p>
 
-                    <a href="quizProjects.html"><button id="view" class="viewBtn btn btn-sm btn-primary ">View Project</button></a>
-                    <a href="https://github.com/AbdullahiAden/QuizApp/tree/master"> <button class="sourceBtn  btn btn-sm  ">Source Code</button> </a>
-                   
+                    <a href="quizProjects.html"><button id="view" class="viewBtn btn btn-sm btn-primary ">View
+                            Project</button></a>
+                    <a href="https://github.com/AbdullahiAden/QuizApp/tree/master"> <button
+                            class="sourceBtn  btn btn-sm  ">Source Code</button> </a>
+
                 </div>
 
                 <div class=" col-sm-6 col-lg-4 projects">
@@ -108,10 +111,12 @@
                     <p class="projectDescription">Lorem ipsum dolor sit amet.</p>
 
                     <div>
-                        <a href="acmeProject.html"><button class="viewBtn   btn btn-sm btn-primary ">View Project</button></a>
-                        <a href="https://github.com/Hano2001/ACME-Grupp-4"><button class="sourceBtn  btn btn-sm  ">Source Code</button></a>
+                        <a href="acmeProject.html"><button class="viewBtn   btn btn-sm btn-primary ">View
+                                Project</button></a>
+                        <a href="https://github.com/Hano2001/ACME-Grupp-4"><button
+                                class="sourceBtn  btn btn-sm  ">Source Code</button></a>
 
-                            
+
                     </div>
 
                 </div>
@@ -123,10 +128,12 @@
 
                     <div class="projectName">Yazy Game </div>
                     <p class="projectDescription">Lorem ipsum dolor sit amet.</p>
-                    
-                    <a href="quizProjects.html"><button id="view" class="viewBtn btn btn-sm btn-primary ">View Project</button></a>
-                    <a href="https://github.com/AbdullahiAden/QuizApp/tree/master"> <button class="sourceBtn  btn btn-sm  ">Source Code</button> </a>
-                   
+
+                    <a href="quizProjects.html"><button id="view" class="viewBtn btn btn-sm btn-primary ">View
+                            Project</button></a>
+                    <a href="https://github.com/AbdullahiAden/QuizApp/tree/master"> <button
+                            class="sourceBtn  btn btn-sm  ">Source Code</button> </a>
+
 
                 </div>
 
@@ -138,7 +145,7 @@
     <!-- evrything below work section except footer -->
     <section class="lastCon">
 
-        <div class="education">
+        <div class="education" id="educationSection">
             <h5> Education</h5>
             <p>
                 I study full stack education open source at Nackademin
@@ -154,52 +161,54 @@
             </p>
 
         </div>
-        <div class="aboutCon">
+        <div class="aboutCon" id="aboutSection">
             <h4>Who Am i?</h4>
 
             <p>
                 Besides my education background in full stack web developement, i am passionate about web developement,
                 designing them, developing them.
-                I love learning new technologies and everything elese web developement. 
+                I love learning new technologies and everything elese web developement.
                 Feel free to reach out
             </p>
         </div>
 
+        <div id="contactSection">
+            <form class="contact-form">
+                <h2>Contact</h2>
 
-        <form class="contact-form">
-            <h2>Contact</h2>
+                <div class="row">
+                    <div class="col">
+                        <label for="firstNameText">First name:</label>
 
-            <div class="row">
-                <div class="col">
-                    <label for="firstNameText">First name:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="lastNameText">Last name:</label>
 
-                    <input type="text" class="form-control">
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div>
+                        <label for="subjectText">Subject:</label>
+
+                        <input type="text-area" class="form-control" id="subjectText">
+                    </div>
+                    <div class="form-group">
+                        <label for="messageText">Message:</label>
+                        <textarea class="form-control" id="messageText" rows="3"></textarea>
+                    </div>
+
+
+
                 </div>
-                <div class="col">
-                    <label for="lastNameText">Last name:</label>
+                <div class="sendDiv">
+                    <button class=" sendBtn btn btn-sm btn-primary">Send</button>
 
-                    <input type="text" class="form-control">
                 </div>
 
-                <div>
-                    <label for="subjectText">Subject:</label>
+            </form>
+        </div>
 
-                    <input type="text-area" class="form-control" id="subjectText">
-                </div>
-                <div class="form-group">
-                    <label for="messageText">Message:</label>
-                    <textarea class="form-control" id="messageText" rows="3"></textarea>
-                </div>
-
-
-
-            </div>
-            <div class="sendDiv">
-                <button class=" sendBtn btn btn-sm btn-primary">Send</button>
-
-            </div>
-
-        </form>
 
     </section>
 
@@ -209,7 +218,7 @@
     </footer>
 
 
-<!-- esential for navbar hamburger to work -->
+    <!-- esential for navbar hamburger to work -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -219,7 +228,7 @@
     </script>
 
 
-<!-- custom js -->
+    <!-- custom js -->
     <script src="js/Portfolio.js"></script>
 
 
