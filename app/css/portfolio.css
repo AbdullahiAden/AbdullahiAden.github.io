@@ -7427,7 +7427,8 @@ hr {
 
 @media screen and (max-width: 400px) {
   .introCon .container {
-    margin-top: 4rem auto;
+    margin-top: 3rem auto;
+    padding: 3rem;
     height: auto;
     width: 300px; }
   .heading {
@@ -7496,16 +7497,13 @@ hr {
     width: 100%; } }
 
 @media all and (min-width: 1020px) {
-  .introCon .container {
-    margin-top: 3rem auto;
-    padding: 3rem;
-    height: auto;
-    width: 300px; }
+  div.introCon {
+    margin: 7rem auto;
+    width: 2000px; }
   .heading {
-    margin-top: 4rem;
-    width: 900px; }
-    .heading span {
-      font-size: 1.5rem; }
-    .heading .undertext {
-      font-weight: 700;
-      font-size: 3rem; } }
+    margin-top: 5rem;
+    width: 100%; }
+    .heading h1, .heading .h1 {
+      font-size: 2rem; }
+      .heading h1 .undertext, .heading .h1 .undertext {
+        font-size: 3rem; } }
