@@ -1,7 +1,135 @@
 ** beskriv scrum 
+    Ett ramverk inom vilket man kan angripa komplexa, adaptiva problem, medan
+    man produktivt och kreativt levererar produkter med högsta möjliga värde.Scrum är en agil utvecklingsmetod, 
+    som går ut på att man i korta etapper, sprintar, arbetar utifrån en prioriterad lista.Scrum är ett processramverk 
+    som har använts för att hantera komplex produktutveckling sedan tidigt 1990-tal.
+    Scrum är inte en process eller teknik för att bygga produkter; det är snarare ett
+    ramverk inom vilket man kan utnyttja olika processer och tekniker.  Scrum är en iterativ arbetsmetod som bygger på att kontinuerlig anpassa, 
+    kontrollera risker och förbättra träffsäkerheten för ett projekt
 
-** beskriv grafiska profil
+    Projektledingsmetoden baseras på tre grundstenar:
+    transparens, inspektion och adaption. Genom transparens ska alla involverade i projektet kunna
+    se hur processen ser ut. Inspektion innebär att Scrumanvändare ständigt ska granska
+    produktbacklogen för att hitta eventuella fel. Processen ska kunna justeras genom adaption till de
+    förändringar som görs om något anses vara fel.
+
+   * Artefakterna i Scrum
+    Scrums artefakter representerar arbete eller värde på olika sätt som ger transparens och möjliggör granskning och anpassning.
+
+        Product backlog
+        Här listas krav och funktioner till produkten som så kallade User stories. Det är produktägarens ansvar att hantera backlogen och prioritera den.
+
+        Sprint backlog
+        Här listas user stories som är med i aktuell sprint.
+
+   * Några roller inom scrum är:
+
+        Produktägare : är kravställaren och kommer vanligtvis från verksamheten men kan även vara en del i IT-organisationen. 
+        Scrummaster : är utvecklingsteamets coach och har till största ansvarsområde att se till att utvecklingsteamet kan arbeta obehindrat och att processen följs.
+        Utvecklingsteamet : består vanligtvis av 3-9 personer. Teamet ansvarar själv för leveranser och att rätt kompetens finns inom teamet. 
+
+   * Processen
+    Processen består av några viktiga delar som definierar metoden. Dessa delar är:
+
+        Sprint
+        Sprintplanering
+        Daily scrum
+        Demo
+        Retrospective
+
+    Grunden i Scrum är att arbetet och utvecklingen delas upp i olika tidsbestämda delar, så kallade sprintar. Varje sprint kan vara ca 2-4 veckor långa. Innan varje sprint har man en sprintplanering. Då plockar man ur ett antal user stories (krav och funktioner) från product backlog och lägger i sprint backlog. Det är den som definierar vad man ska utveckla under just den sprinten.
+    När sprinten är definierad så påbörjas den. Varje dag i sprinten börjar med ett daily scrum, ett stå-upp-möte där utvecklingsteamet, scrummastern och ofta produktägaren deltar. Mötet ska vara tidsbestämt, 15 minuter brukar vara lagom. Under mötet ska varje deltagare berätta vad de gjort sedan förra mötet, vad de ska göra under dagen och om personen har några hinder för att genomföra uppgifterna.
+    Efter varje sprint så har teamet en demo av leveransen. Här har verksamheten möjlighet att följa upp utvecklingen och komma med synpunkter. Förslag till förändringar och buggar läggs i backlogen och prioriteras av produktägaren. Efter varje sprint har teamet även ett retrospektiv där senaste sprinten gås igenom.
+    Sedan börjar processen igång igen med sprintplanering för nästa sprint.
+
+   * Fördelar med Scrum
+        Tydligt ramverk
+        Fokus på affärsnytta
+        Flexibelt förändringsarbete 
+
+        En fördel med scrum är fokuseringen på affärsnytta och möjligheten att förändra projektet på ett strukturerat sätt.
+
+        Kommunikationen ökar, arbetet blir mer transparent, det är flexiblare och lättare att anpassa
+        arbetet till nya krav och kunden är involverad i arbetsprocessen på ett bättre sätt. 
+
+    * nackdelar/svårigheter med scrum:    
+
+        Stress
+        Det ligger stor press på utvecklarna att uppnå de krav som de tagit på sig under en sprint. Detta
+        gör det svårare att utveckla produkten korrekt 
+
+        Olika geografiska platser
+        Problematik uppstår kring stora projekt som är utspridda i globala organisationer. Den informella
+        kommunikationen är viktig inom Scrum, vilket är svårare att understödja i projekt där
+        Scrummedlemmarna har olika geografiska arbetsplatser.
+
+        Svårt att involvera underleverantörer
+        Eftersom produktbacklogen ständigt uppdateras är det svårt att ge en underleverantör precisa
+        specifikationer över vad som ska göras. Således blir det svårt att inkorporera ett externt företag i
+        den iterativa processen. 
+
+**  beskriv grafiska profil
+
+    Kortfattat så är en grafisk profil en typ av manual eller instruktion för hur ett företags eller organisations logotyp ska användas samt färger,
+    typsnitt och grafiska element som kan ingå i den visuella kommunikationen. Syftet är att kunna kommunicera enhetligt för att bygga ett starkt varumärke. 
+    Genom att vara konsekvent med designen så blir det tydligt för mottagaren vem kommunikationen kommer ifrån och det skapar igenkänning.
+
+
+    Det som ingår i en grafiska profil är annorlunda men generellt ska den innehålla:
+    En logotyp, gärna i några olika utföranden så den kan anpassas efter olika användningsområden.
+    En eller flera färger
+    Ett eller två typsnitt
+    Eventuella mönster, symboler eller andra grafiska element
+
+    * Fördelar med grafiska profil
+    Det skapar identitet som tydliggör vem avsändaren är. 
+    Ökar möjligheten att få kontakt med nya kunder. 
+    Företag med en bra grafisk profil framställer sig själva som seriösa. 
+    Lönsam marknadsföring. 
+    Hjälper företaget synas i den hårda konkurrens som råder.
+
+
+    * nackdelar/svårigheter:
+
+    Begränsar kreativiteten.
+    Om ett företag beslutar sig att göra ändringar på sin grafiska profil kan det ta tid för kunderna att känna igen att det är samma företag, 
+    och om ändringarna är stora, såsom logo/namn kan det vara mycket svårare om inte omöjligt för kunderna att känna igen.
+    Mindre företag argumenterar att grafiska profiler inte är nödvändig och att företaget klarar sig utan.
+     
+
 
 ** beskriv tillgänglighet
+    Begreppet tillgänglighet är centralt i Vägledningen för webbutveckling. Det gäller delvis med den breda betydelsen att information och tjänster
+    ska gå att nå (servern åtkomlig, filformatet läsbart, säkerheten god, prestanda acceptabel och så vidare).
+    Men framför allt gäller det här i betydelsen att information och tjänster ska kunna användas av alla människor 
+    oavsett till exempel funktionsnedsättning.
 
+    *Fördelar:
+    Din webbsida/app blir enklare att använda och lättare att förstå.
+    Koden blir robust och följer modern standard.
+    Du gör internet till en bättre plats genom att inkludera alla.
+
+    * nackdelar/svårigheter:
+    Inte kunna designa en webbsida/app hur du vill,eller använda vilka färger eller layout du vill.
+    Om din grafiska profil är emot dessa riktlinjer, så måste den också anpassas efter dessa riktlinjer.
+
+
+    ** tillgänglighet som används i denna project
+
+        1:1.4.10 (AA) Skapa en flexibel layout som fungerar vid förstoring eller liten skärm
+            --Sidan är responsive
+
+        1.4.11 (AA)	Använd tillräckliga kontraster i komponenter och grafik
+            --  sett till att det är tillräckligt kontrast mellan buttons och
+                bakgrunden med hjälp av inspektorn.
+
+        1.4.4 (AA)	Se till att text går att förstora utan problem
+            -- använder olika storlekar på typsnitt på olika skärmar
+
+
+        1.4.3 (AA)	Använd tillräcklig kontrast mellan text och bakgrund
+            -- Använt "contrast" hjälpmedel i chrome inspektorn. 
+
+        3.3.2 (A)	Skapa tydliga och klickbara fältetiketter
+            -- Har lagt fältetiketter övanför textfälten enligt denna punkt.
 
