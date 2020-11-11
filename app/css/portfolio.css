@@ -7159,50 +7159,43 @@ progress {
   .d-print-none {
     display: none !important; } }
 
+html,
 body {
+  height: 100%;
   background: #00111b;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: kanit, sans-serif;
   color: white; }
 
-/* navbar bg color */
 .bg-dark {
-  background-color: #0a272d !important;
+  background-color: #000b11 !important;
   font-weight: 700; }
-
-.navbar .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;.."); }
-
-/* changed the stroke color on toggler button in the svg data rgba stroke='(52,161,185, 0.5)  -- 0,5 is like the opacity* */
-.navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,17,27, 1.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
-
-.navbar-toggler.navbar-toggler {
-  border-color: #00111b; }
+  .bg-dark .navbar .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;.."); }
+  .bg-dark .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  .bg-dark .navbar-toggler.navbar-toggler {
+    border-color: #34A1B9; }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
-  font-weight: 700; }
+  color: white; }
 
+/* navlinks anchor tags */
 #navlinks {
   margin-right: 2rem; }
   #navlinks a {
     color: white;
-    font-weight: bold;
+    font-weight: 400;
     opacity: 90%; }
     #navlinks a:hover {
       color: #34A1B9;
       opacity: 100%; }
 
-/* undertext color */
-.undertext {
-  color: #34A1B9; }
-
-/* navlinks anchor tags */
-.heading {
-  font-size: 20px; }
-
-.navbar-dark .navbar-brand {
-  color: white; }
+.introCon {
+  /* undertext color -develop and design*/ }
+  .introCon .undertext {
+    color: #34A1B9; }
+  .introCon .heading {
+    font-size: 20px; }
 
 @media (max-width: 320px) {
   .buttons {
@@ -7211,21 +7204,20 @@ body {
 .buttons .contactButt {
   background-color: #34A1B9;
   width: 150px;
-  color: white; }
+  color: #000b11; }
+  .buttons .contactButt:hover {
+    background-color: #297e91;
+    color: white; }
 
-.buttons .contactButt:hover {
-  color: #0a272d; }
-
-.buttons .workButt, .buttons .workCon .projects .sourceBtn, .workCon .projects .buttons .sourceBtn {
+.buttons .workButt {
   border: 1px solid #34A1B9;
   color: white;
   width: 150px; }
-  .buttons .workButt:hover, .buttons .workCon .projects .sourceBtn:hover, .workCon .projects .buttons .sourceBtn:hover {
+  .buttons .workButt:hover {
     color: #34A1B9; }
 
 .social-container {
   width: 400px;
-  /* margin: 40vh auto; */
   text-align: left; }
   .social-container .social-icons {
     padding: 0;
@@ -7235,36 +7227,37 @@ body {
       display: inline-block;
       margin: 0.15em;
       position: relative;
-      font-size: 1.2em; }
+      font-size: 1.5em; }
     .social-container .social-icons a {
       color: white; }
       .social-container .social-icons a:hover {
         color: #34A1B9; }
 
-.workText {
-  font-size: 50px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.5px white;
-  font-style: italic;
-  text-align: right; }
-
 .workCon {
-  background-color: black;
   padding: 1rem;
   margin: 3rem; }
+  .workCon .workText {
+    background-color: #00111b;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+    font-family: kanit, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 15px; }
   .workCon .projects {
     position: relative;
     padding-bottom: 1rem; }
     .workCon .projects .img-fluid {
       opacity: 50%; }
       .workCon .projects .img-fluid:hover {
-        opacity: 80%; }
+        opacity: 90%; }
     .workCon .projects .projectName {
       background-color: #0a272d;
-      height: 21px;
+      height: 25px;
       width: fit-content;
+      text-align: center;
+      padding: auto;
       font-weight: 700;
-      font-size: large;
+      font-size: larger;
       line-height: 1rem;
       color: white;
       text-align: center;
@@ -7280,9 +7273,11 @@ body {
       line-height: 1rem; }
     .workCon .projects .viewBtn {
       background-color: #34A1B9;
+      color: #000b11;
       margin: 1rem; }
       .workCon .projects .viewBtn:hover {
-        background-color: #00111b; }
+        background-color: #297e91;
+        color: white; }
     .workCon .projects .sourceBtn {
       position: relative;
       width: 100px;
@@ -7293,13 +7288,29 @@ body {
         color: #34A1B9; }
 
 .lastCon {
-  border: 1px solid red;
-  margin-left: 3rem; }
+  margin: 3rem;
+  background-color: #000b11;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.education {
+  background-color: #000b11;
+  width: 700px;
+  margin: auto;
+  padding: 1rem; }
+  .education h5, .education .h5 {
+    text-align: center;
+    font-weight: 700; }
+  .education p {
+    padding: 1rem; }
 
 .aboutCon {
-  width: 500px;
+  padding: 1rem;
+  width: 700px;
   margin: 2rem auto;
   border: 1px solid white; }
+  .aboutCon h4, .aboutCon .h4 {
+    text-align: center; }
 
 .contact-form {
   width: 500px;
@@ -7307,22 +7318,38 @@ body {
   .contact-form .form-control {
     margin-bottom: 1rem;
     background-color: #0a272d;
-    border-radius: 5px; }
+    border-radius: 5px;
+    color: white; }
+  .contact-form .sendDiv {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto 3rem auto; }
+    .contact-form .sendDiv .sendBtn {
+      width: 100px;
+      background-color: #34A1B9;
+      font-size: large;
+      border-radius: 5px;
+      color: #000b11; }
+      .contact-form .sendDiv .sendBtn:hover {
+        background-color: #297e91;
+        color: white; }
 
-.card {
-  background-color: #0a272d;
-  margin-top: 3rem;
-  color: #010303;
-  text-align: center; }
+footer {
+  height: 50px;
+  background-color: #000b11;
+  margin-top: 6rem;
+  padding: 1rem;
+  color: grey;
+  text-align: center;
+  font-size: smaller; }
 
 .quizContainer {
   margin: 4rem auto;
-  border: 1px solid yellow;
   width: 1000px;
   display: grid;
   grid-template-columns: 1fr 2fr; }
   .quizContainer .project-text {
-    border: 1px solid green;
+    background-color: #000b11;
     margin-top: 2rem;
     padding: 3rem;
     font-size: large; }
@@ -7340,18 +7367,22 @@ body {
       .quizContainer .imgCon {
         width: 300px;
         margin: auto; } }
+  @media (max-width: 767px) {
+    .quizContainer {
+      width: 500px;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem; } }
 
 .quizContainer2 {
   margin: auto;
   display: flex;
   flex-direction: row-reverse;
   width: 1000px;
-  border: 1px solid yellow;
   justify-content: space-between;
   align-items: center; }
   .quizContainer2 .project-text2 {
+    background-color: #000b11;
     margin: 2rem;
-    border: 1px solid green;
     height: fit-content;
     flex-direction: column; }
     .quizContainer2 .project-text2 p {
@@ -7377,12 +7408,14 @@ body {
         margin: 0; }
         .quizContainer2 .project-text2 p {
           width: 320px; } }
+  @media (max-width: 767px) {
+    .quizContainer2 {
+      display: flex;
+      flex-direction: column;
+      width: 500px; } }
 
 hr {
   border: 2px solid #34A1B9; }
-
-h2 span, .h2 span {
-  font-family: Monoton, cursive; }
 
 @media all and (max-width: 500px) {
   .introCon {
@@ -7423,6 +7456,8 @@ h2 span, .h2 span {
     font-size: 2em;
     border: 1px solid pink;
     width: 400px; }
+  .education {
+    width: 400px; }
   .aboutCon {
     width: 300px;
     margin: 3rem auto; }
@@ -7443,10 +7478,16 @@ h2 span, .h2 span {
   .heading {
     font-size: smaller; }
     .heading h1, .heading .h1 {
-      font-weight: 400; } }
+      font-weight: 400; }
+  .education {
+    width: 950px; } }
 
 @media all and (min-width: 1020px) {
   .heading {
-    margin-top: 5rem;
-    font-weight: 700px;
-    border: 1px solid red; } }
+    margin-top: 2rem;
+    width: 900px; }
+    .heading span {
+      font-size: 1.5rem; }
+    .heading .undertext {
+      font-weight: 700;
+      font-size: 3rem; } }

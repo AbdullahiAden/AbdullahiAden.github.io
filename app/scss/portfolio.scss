@@ -1,22 +1,16 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 $body-color: #081319;
-$font-stack:'Segoe UI',
-Tahoma,
-Geneva,
-Verdana,
+$font-stack: kanit,
 sans-serif;
 $primary-color:#00111b;
-// $secondary-color:#056d5d;
 $secondary-color:#0a272d;
 $light-blue: #34A1B9;
-// $dark-primary: #0a272d;
+$dark-primary: #000b11;
 
+// mixings media queries use case
 $mobile:320px;
-$screenCollapse:516px;
-
-
-
+$screenCollapse:767px;
 
 @mixin mobile {
     @media (max-width: #{$mobile}) {
@@ -30,95 +24,73 @@ $screenCollapse:516px;
     }
 }
 
+html,
 body {
+    height: 100%;
+
     background: $primary-color;
     font-family: $font-stack;
     color: white;
+
+
 }
 
-// .introCon {
-//     // background-image: url(".LANDING PAGE.png");
-//     background-size: cover;
-//     height: 100vh;
-
-//     // *make this smaller on 
-//     // padding: 12rem;
-
-
-// }
-
-/* navbar bg color */
-
+// navbar styles
 .bg-dark {
-    background-color: $secondary-color !important;
+    background-color: $dark-primary !important;
     font-weight: 700;
+
+    // hamburger img 
+    .navbar .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;..");
+    }
+
+    .navbar-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .navbar-toggler.navbar-toggler {
+        border-color: $light-blue;
+    }
+
 }
 
-.navbar .navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;..");
-}
-
-/* changed the stroke color on toggler button in the svg data rgba stroke='(52,161,185, 0.5)  -- 0,5 is like the opacity* */
-.navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,17,27, 1.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.navbar-toggler.navbar-toggler {
-    border-color: $primary-color;
-}
-
+// navbar brand/ logo
 .navbar-dark .navbar-brand {
-    color: #fff;
-    font-weight: 700;
+    color: white;
 
 }
 
+/* navlinks anchor tags */
 #navlinks {
     margin-right: 2rem;
 
     a {
         color: white;
-        font-weight: bold;
+        font-weight: 400;
         opacity: 90%;
 
         &:hover {
             color: $light-blue;
             opacity: 100%;
-            // border: 1px solid $light-blue;
         }
     }
 }
 
-// .container {
-//     /* margin: 12rem; */
-//     /* background-image: url("LANDING\ PAGE.png"); */
+.introCon {
 
+    /* undertext color -develop and design*/
+    .undertext {
+        color: #34A1B9;
+    }
 
-// }
+    .heading {
+        font-size: 20px;
 
-/* undertext color */
-.undertext {
-    color: #34A1B9;
+    }
 }
 
-
-/* navlinks anchor tags */
-
-
-.heading {
-    // background-color: $secondary-color;    
-    font-size: 20px;
-
-}
-
-
-.navbar-dark .navbar-brand {
-    color: white;
-    // border-bottom: none;
-    // margin-left: 3rem;
-    // font-weight: 700;
-}
-
+// buttons contact and see work
 .buttons {
 
     @include mobile {
@@ -128,13 +100,12 @@ body {
     .contactButt {
         background-color: $light-blue;
         width: 150px;
-        color: white;
-    }
+        color: $dark-primary;
 
-    .contactButt:hover {
-        // background-color: none;
-        color:$secondary-color ;
-
+        &:hover {
+            background-color: darken($color: $light-blue, $amount: 10);
+            color: white;
+        }
     }
 
     .workButt {
@@ -146,17 +117,11 @@ body {
             color: $light-blue;
         }
     }
-
-
-
 }
 
-
-
-
+// icons / socials links
 .social-container {
     width: 400px;
-    /* margin: 40vh auto; */
     text-align: left;
 
     .social-icons {
@@ -168,7 +133,7 @@ body {
             display: inline-block;
             margin: 0.15em;
             position: relative;
-            font-size: 1.2em;
+            font-size: 1.5em;
 
         }
 
@@ -178,39 +143,26 @@ body {
             &:hover {
                 color: $light-blue;
             }
-
         }
-
-
     }
 }
 
-// #workMiddle {
-//     font-size: 50px;
-//     font-style: italic;
-
-
-// }
-
-
-.workText {
-    font-size: 50px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px white;
-    font-style: italic;
-    text-align: right;
-    // opacity: 10%; 
-}
-
+// work / portfolio section
 .workCon {
-    background-color: black;
     padding: 1rem;
     margin: 3rem;
 
+    .workText {
+        background-color: #00111b;
+        background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+        font-family: $font-stack;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 15px;
+    }
 
 
     .projects {
-        // border: 1px solid yellow;
         position: relative;
         padding-bottom: 1rem;
 
@@ -218,18 +170,20 @@ body {
             opacity: 50%;
 
             &:hover {
-                opacity: 80%;
+                opacity: 90%;
             }
         }
 
         .projectName {
 
             background-color: $secondary-color;
-            height: 21px;
+            height: 25px;
             width: fit-content;
+            text-align: center;
+            padding: auto;
 
             font-weight: 700;
-            font-size: large;
+            font-size: larger;
             line-height: 1rem;
             color: white;
             text-align: center;
@@ -250,21 +204,17 @@ body {
         }
 
         .viewBtn {
-            // position: absolute;
-            // top: 65%;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
             background-color: $light-blue;
+            color: $dark-primary;
             margin: 1rem;
 
             &:hover {
-                background-color: $primary-color;
+                background-color: darken($color: $light-blue, $amount: 10);
+                color: white;
             }
         }
 
         .sourceBtn {
-            // extends style from workBtn
-            @extend .workButt;
             position: relative;
             width: 100px;
             margin: 1rem;
@@ -273,7 +223,6 @@ body {
 
 
             &:hover {
-                // border:solid 1px white;
                 color: $light-blue;
             }
         }
@@ -282,14 +231,42 @@ body {
     }
 }
 
-// ???????????????????????????????????????????????????? 
+// education, contact form, about me sections
 .lastCon {
-    border: 1px solid red;
-    margin-left: 3rem;
+    margin: 3rem;
+    background-color: $dark-primary;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+
+}
+
+.education {
+    background-color: darken($color: $primary-color, $amount: 2);
+    width: 700px;
+    margin: auto;
+    padding: 1rem;
+
+    h5 {
+        text-align: center;
+        font-weight: 700;
+
+    }
+
+    p {
+        padding: 1rem;
+    }
 }
 
 .aboutCon {
-    width: 500px;
+    padding: 1rem;
+
+    h4 {
+        text-align: center;
+
+    }
+
+    width: 700px;
     margin: 2rem auto;
     border: 1px solid white;
 }
@@ -302,32 +279,63 @@ body {
         margin-bottom: 1rem;
         background-color: $secondary-color;
         border-radius: 5px;
+        color: white;
 
     }
+
+    .sendDiv {
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto 3rem auto;
+
+        .sendBtn {
+            width: 100px;
+            background-color: $light-blue;
+            font-size: large;
+            border-radius: 5px;
+            color: $dark-primary;
+
+            &:hover {
+                background-color: darken($color: $light-blue, $amount: 10);
+                color: white;
+
+            }
+        }
+    }
+
+
+
 }
 
 // footer
-.card {
-    background-color: $secondary-color;
-    margin-top: 3rem;
-    color: darken($color: $secondary-color, $amount: 10%);
+
+footer {
+    height: 50px;
+    background-color: $dark-primary;
+    margin-top: 6rem;
+    padding: 1rem;
+    color: grey;
     text-align: center;
+    font-size: smaller;
+
+
 }
 
-// ** quiz project
+// * styles for projects html files, both quiz and acme
 
+// uses css grid
 .quizContainer {
     margin: 4rem auto;
-    border: 1px solid yellow;
     width: 1000px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
     .project-text {
-        border: 1px solid green;
+        background-color:$dark-primary;
         margin-top: 2rem;
         padding: 3rem;
         font-size: large;
+
 
         h4 {
             text-decoration: underline $light-blue;
@@ -338,6 +346,7 @@ body {
         margin-top: 2rem;
     }
 
+    // mixings used here
     @include mobile {
         width: 320px;
         grid-template-columns: 1fr;
@@ -348,7 +357,6 @@ body {
 
         }
 
-
         .imgCon {
             width: 300px;
             margin: auto;
@@ -356,31 +364,27 @@ body {
         }
     }
 
+    @include screenCollapse {
+        width: 500px;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
 }
 
-// ***** use flexbox here
+// uses flexbox here
 .quizContainer2 {
     margin: auto;
-
     display: flex;
     flex-direction: row-reverse;
-
-
     width: 1000px;
-    border: 1px solid yellow;
-    //   padding: 3rem;
     justify-content: space-between;
     align-items: center;
-    //   margin-left: auto;
 
     .project-text2 {
+        background-color:$dark-primary;
         margin: 2rem;
-        // padding: 1rem;
-        border: 1px solid green;
-        // width: 700px;
         height: fit-content;
-
-        // margin: 1rem;
+        flex-direction: column;
 
         p {
             width: 400px;
@@ -389,16 +393,10 @@ body {
             padding: 2rem;
 
         }
-
-        flex-direction: column;
-
     }
 
     .imgCon2 {
-        // background-color: black;
-        // border-radius: 10%;
         padding: 1rem;
-        // margin-bottom:1rem ;
         width: 500px;
         height: fit-content;
     }
@@ -407,6 +405,7 @@ body {
         padding-top: 1rem;
     }
 
+    // mixings for flesbox part
     @include mobile {
         display: flex;
         flex-direction: column;
@@ -415,8 +414,6 @@ body {
         .imgCon2 {
             width: 320px;
         }
-
-
 
         .project-text2 {
             width: 320px;
@@ -427,21 +424,21 @@ body {
                 width: 320px;
             }
         }
+    }
 
-
+    @include screenCollapse {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
     }
 
 }
-
 
 hr {
     border: 2px solid $light-blue;
 }
 
-h2 span {
-    font-family: Monoton, cursive;
-}
-
+// * media queries
 // untill it hits, 
 @media all and (max-width:500px) {
     .introCon {
@@ -449,20 +446,15 @@ h2 span {
         padding: none;
         height: auto;
         width: 200px;
-        // border: 1px solid yellow;
 
         .heading {
-
             font-size: small;
             border: 1px solid pink;
             width: 300px;
-
-
         }
     }
 
     .workCon {
-        // border: 1px solid gold;
         width: 400px;
         margin: 2rem;
     }
@@ -485,18 +477,9 @@ h2 span {
             justify-content: center;
         }
     }
-
-    // ** project quiz 
-    // .quizContainer {
-    //     grid-auto-columns: auto;
-    // }
-
-    // .quizContainer2 {
-    //     flex-direction: column;
-    //     flex-wrap: wrap;
-    // }
 }
 
+// untill navbar expands
 @media all and (max-width:767px) {
     .navbar-dark .navbar-brand {
         margin-left: 1rem;
@@ -508,13 +491,16 @@ h2 span {
         padding: none;
         height: auto;
         width: 500px;
-        // border: 1px solid yellow;
     }
 
     .heading {
 
         font-size: 2em;
         border: 1px solid pink;
+        width: 400px;
+    }
+
+    .education {
         width: 400px;
     }
 
@@ -538,7 +524,7 @@ h2 span {
 
 }
 
-
+// after navabr expands
 @media all and (min-width:767px) {
     .introCon {
         margin: 5rem 3rem;
@@ -554,67 +540,27 @@ h2 span {
         }
     }
 
-}
-
-// *********** resposive work .....................
-// @media all and (min-width:650px) {
-//     .introCon {
-//         padding: 7rem;
-//         height: auto;
-
-//     }
-
-//     .heading {
-//         font-size: 10px;
-//         text-transform: $light-blue;
-
-//         h1 {
-//             font-weight: 400px;
-//         }
-//     }
-
-
-// }
-
-// // above 500px, stays so until next breakpoint bad for mobile screens
-// @media all and (min-width:767px) {
-//     .navbar-dark .navbar-brand {
-//         margin-left: 1rem;
-
-//         // border-bottom: solid 1px none;
-//     }
-
-//     .introCon {
-//         padding: 4rem 2rem;
-//         margin-top: 2rem;
-//         height: auto;
-
-//     }
-
-// }
-
-// // above 1020px it stays,
-
-@media all and (min-width:1020px) {
-    // .introCon {
-    //     margin: rem 0;
-    //     height: auto;
-
-    .heading {
-        margin-top: 5rem;
-        font-weight: 700px;
-        // font-size: 2em;
-        border: 1px solid red;
+    .education {
+        width: 950px;
     }
 
-    // }
+}
 
-    // .navbar-dark .navbar-brand {
-    //     border-bottom: none;
-    // }
+@media all and (min-width:1020px) {
 
+    .heading {
+        margin-top: 2rem;
+        width: 900px;
 
+        span {
+            font-size: 1.5rem;
+        }
 
+        .undertext {
+            font-weight: 700;
+            font-size: 3rem;
+        }
 
+    }
 
 }
