@@ -7474,7 +7474,8 @@ hr {
     font-size: 2em;
     width: 400px; }
   .education {
-    width: 400px; }
+    width: 300px;
+    border: 1px solid red; }
   .aboutCon {
     width: 300px;
     margin: 3rem auto; }
