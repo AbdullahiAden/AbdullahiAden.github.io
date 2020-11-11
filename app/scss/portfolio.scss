@@ -9,7 +9,7 @@ $light-blue: #34A1B9;
 $dark-primary: #000b11;
 
 // mixings media queries use case
-$mobile:320px;
+$mobile:420px;
 $screenCollapse:767px;
 
 @mixin mobile {
@@ -40,22 +40,19 @@ body {
     background-color: $dark-primary !important;
     font-weight: 700;
 
-    // hamburger img 
-    .navbar .navbar-dark .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;..");
-    }
+}
 
-    .navbar-toggler .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    }
+// hamburger img 
 
-    .navbar-toggler.navbar-toggler {
-        border-color: $light-blue;
-    }
+.bg-dark .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
 }
 
-// navbar brand/ logo
+.bg-dark .navbar-toggler.navbar-toggler {
+    border-color: $light-blue;
+    margin-right: 2rem;
+}
 .navbar-dark .navbar-brand {
     color: white;
 
@@ -77,7 +74,8 @@ body {
     }
 }
 
-.introCon {
+.container {
+    background-colo: red;
 
     /* undertext color -develop and design*/
     .undertext {
@@ -86,6 +84,8 @@ body {
 
     .heading {
         font-size: 20px;
+
+
 
     }
 }
@@ -102,9 +102,14 @@ body {
         width: 150px;
         color: $dark-primary;
 
+        box-shadow: inset 0 0 0 0 $dark-primary;
+        transition: ease-out 0.3s;
+
         &:hover {
-            background-color: darken($color: $light-blue, $amount: 10);
+            // background-color: darken($color: $light-blue, $amount: 10);
             color: white;
+            box-shadow: inset 150px 0 0 0 $dark-primary;
+
         }
     }
 
@@ -113,8 +118,14 @@ body {
         color: white;
         width: 150px;
 
+        box-shadow: inset 0 0 0 0 $light-blue;
+        transition: ease-out 0.3s;
+
+
         &:hover {
-            color: $light-blue;
+            // color: $light-blue;
+            color: white;
+            box-shadow: inset 150px 0 0 0 darken($color: $light-blue, $amount: 50);
         }
     }
 }
@@ -151,6 +162,7 @@ body {
 .workCon {
     padding: 1rem;
     margin: 3rem;
+
 
     .workText {
         background-color: #00111b;
@@ -309,9 +321,11 @@ body {
 
 // footer
 
-footer {
-    height: 50px;
+.footer {
     background-color: $dark-primary;
+    flex-shrink: 0;
+
+
     margin-top: 6rem;
     padding: 1rem;
     color: grey;
@@ -331,7 +345,7 @@ footer {
     grid-template-columns: 1fr 2fr;
 
     .project-text {
-        background-color:$dark-primary;
+        background-color: $dark-primary;
         margin-top: 2rem;
         padding: 3rem;
         font-size: large;
@@ -353,7 +367,9 @@ footer {
         grid-gap: 1rem;
 
         .project-text {
-            padding: 1rem;
+            margin: 2rem auto 0 auto;
+            // background-color: pink;
+            width: 320px;
 
         }
 
@@ -381,7 +397,7 @@ footer {
     align-items: center;
 
     .project-text2 {
-        background-color:$dark-primary;
+        background-color: $dark-primary;
         margin: 2rem;
         height: fit-content;
         flex-direction: column;
@@ -440,32 +456,48 @@ hr {
 
 // * media queries
 // untill it hits, 
-@media all and (max-width:500px) {
-    .introCon {
-        margin: 1rem 3rem;
-        padding: none;
+@media screen and (max-width:400px) {
+    .introCon .container {
+        margin-top: 3rem auto;
+        padding: 3rem;
         height: auto;
-        width: 200px;
+        width: 300px;
+        border: 1px solid red;
 
-        .heading {
-            font-size: small;
-            border: 1px solid pink;
+    }
+
+    .heading {
+        font-size: small;
+        width: 300px;
+
+        h1 {
+            background-color: yellow;
             width: 300px;
         }
     }
 
     .workCon {
-        width: 400px;
-        margin: 2rem;
+        width: 300px;
+        margin: auto 3rem;
+        border: 1px solid red;
+    }
+
+    .lastCon {
+        width: 300px;
+
+        .education {
+            width: 300px;
+        }
     }
 
     .aboutCon {
-        width: 300px;
+        width: 500px;
         margin: 3rem auto;
     }
 
+
     .contact-form {
-        width: 300px;
+        width: 60px;
         margin: auto;
         flex-direction: column;
 
@@ -477,6 +509,10 @@ hr {
             justify-content: center;
         }
     }
+
+    .footer {
+        width: 100%;
+    }
 }
 
 // untill navbar expands
@@ -486,7 +522,7 @@ hr {
         border-bottom: solid 1px $light-blue;
     }
 
-    .introCon {
+    .container {
         margin: 5rem 3rem;
         padding: none;
         height: auto;
@@ -496,7 +532,6 @@ hr {
     .heading {
 
         font-size: 2em;
-        border: 1px solid pink;
         width: 400px;
     }
 
@@ -526,7 +561,7 @@ hr {
 
 // after navabr expands
 @media all and (min-width:767px) {
-    .introCon {
+    .container {
         margin: 5rem 3rem;
         padding: none;
         height: auto;
@@ -541,7 +576,7 @@ hr {
     }
 
     .education {
-        width: 950px;
+        width: 100%;
     }
 
 }

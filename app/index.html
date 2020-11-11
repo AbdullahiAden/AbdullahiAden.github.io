@@ -14,14 +14,14 @@
 
     <!-- My css -->
     <link rel="stylesheet" href="css/portfolio.css">
+
 </head>
 
 <body>
     <nav id="mainNavbar" class="navbar navbar-expand-md navbar navbar-dark bg-dark  fixed-top">
         <a class="navbar-brand px-0 px-sm-5 " href="index.html">ABDULLAHI ADEN
-            <!-- <img src="g5753.png" alt=""> -->
         </a>
-        <!-- navbar toggle, in bs4 its toggler, data toggle is for saying we are going to collapse something and data target is what that is  -->
+        <!-- navbar toggle,  data toggle collapses, and data targets what will collapse  -->
         <!-- the humberger button, attribute aria-label="toggle navigation for purpose of screen reader, functionally no difference, just easier to understand what it does  -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navlinks"
             aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
         <!-- id to reference as the data-target -->
         <div class="collapse navbar-collapse justify-content-end p-0 " id="navlinks">
 
-            <a class="nav-link " href="#workJump">Work</a>
+            <a class="nav-link " href="#workCon">Work</a>
             <a class="nav-link " href="#">Contact</a>
             <a class="nav-link " href="#">About</a>
             <a class="nav-link " href="#">Education</a>
@@ -41,18 +41,20 @@
 
 
     </nav>
+
+
     <div class="introCon   ">
 
-        <div class="container   m-sm-2 p-2 p-lg-5 ">
+        <div class="container p-0">
             <div class="heading  mb-5 ">
                 <h3> <span>Fullstack Developer :)</span> </h3>
 
-                <h1 class="dispaly-1 "> I <strong class="undertext"> Design and Develop</strong> Amazing Websites, and i
+                <h1> I <strong class="undertext"> Design and Develop</strong> Amazing Websites, and i
                     enjoy it</h1>
 
             </div>
-            <div class="buttons  ">
 
+            <div class="buttons  ">
                 <button class=" ContactButt  btn btn-lg  mr-4 mr-md-5">Contact</button>
                 <!-- class for margin.top on screen size -->
                 <button class=" WorkButt btn btn-lg my-3  mt-md-3  ">See Work</button>
@@ -70,12 +72,10 @@
     </div>
 
 
-    <div>
-        <hr>
-    </div>
+    <hr>
 
+    <!-- work section -->
 
-    <!-- id="wrapper" -->
     <div class="workCon">
         <section class="workJump text-center">
             <h2>
@@ -132,9 +132,8 @@
         </section>
     </div>
 
+    <!-- evrything below work section except footer -->
     <section class="lastCon">
-
-        <!-- <div class="aboutSec"> -->
 
         <div class="education">
             <h5> Education</h5>
@@ -164,7 +163,6 @@
         </div>
 
 
-        <!-- </div> -->
         <form class="contact-form">
             <h2>Contact</h2>
 
@@ -202,15 +200,13 @@
 
     </section>
 
+    <!-- footer -->
     <footer class="footer">
-        <div>Designed & developed by Abdullahi Aden </div>
+        Designed & developed by Abdullahi Aden
     </footer>
 
 
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- esential for navbar hamburger to work -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -219,8 +215,9 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
 
-    <script src="js/Portfolio.js"></script>
 
+<!-- custom js -->
+    <script src="js/Portfolio.js"></script>
 
 
 </body>
