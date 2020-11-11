@@ -118,7 +118,7 @@ body {
         color: white;
         width: 150px;
 
-        box-shadow: inset 0 0 0 0 $light-blue;
+        box-shadow: inset 0 0 0 0 darken($color: $light-blue, $amount: 50);
         transition: ease-out 0.3s;
 
 
@@ -458,11 +458,11 @@ hr {
 // untill it hits, 
 @media screen and (max-width:400px) {
     .introCon .container {
-        margin-top: 3rem auto;
-        padding: 3rem;
+        margin-top: 4rem auto;
+        // padding: 3rem;
         height: auto;
         width: 300px;
-        border: 1px solid red;
+        // border: 1px solid red;
 
     }
 
@@ -471,7 +471,7 @@ hr {
         width: 300px;
 
         h1 {
-            background-color: yellow;
+            // background-color: yellow;
             width: 300px;
         }
     }
@@ -479,7 +479,7 @@ hr {
     .workCon {
         width: 300px;
         margin: auto 3rem;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 
     .lastCon {
@@ -537,7 +537,7 @@ hr {
 
     .education {
         width: 300px;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 
     .aboutCon {
@@ -583,9 +583,16 @@ hr {
 }
 
 @media all and (min-width:1020px) {
+    .introCon .container {
+        margin-top: 3rem auto;
+        padding: 3rem;
+        height: auto;
+        width: 300px;
+        // border: 1px solid red;
 
+    }
     .heading {
-        margin-top: 2rem;
+        margin-top: 4rem;
         width: 900px;
 
         span {
