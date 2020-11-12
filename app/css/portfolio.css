@@ -7193,7 +7193,6 @@ body {
       opacity: 100%; }
 
 .container {
-  background-colo: red;
   /* undertext color -develop and design*/ }
   .container .undertext {
     color: #34A1B9; }
@@ -7306,7 +7305,6 @@ body {
   width: 700px;
   margin: auto;
   padding: 1rem;
-  border: 1px solid red;
   margin-top: 1rem;
   padding-top: 3rem; }
   .education h5, .education .h5 {
@@ -7433,22 +7431,27 @@ hr {
 
 @media screen and (max-width: 400px) {
   .introCon .container {
-    margin-top: 3rem auto;
-    padding: 3rem;
+    margin: 1rem;
+    margin-top: 5rem;
     height: auto;
-    width: 300px; }
-  .heading {
-    font-size: small;
-    width: 300px; }
-    .heading h1, .heading .h1 {
-      width: 300px; }
+    width: 300px;
+    border: 1px solid yellow; }
+    .introCon .container .heading {
+      font-size: 20px;
+      background-color: red;
+      line-height: 1px;
+      width: 100%; }
   .workCon {
     width: 300px;
-    margin: auto 3rem; }
+    margin: 1rem;
+    border: 1px solid red; }
   .lastCon {
+    margin: 1rem;
+    margin-top: 2rem;
+    height: auto;
     width: 300px; }
     .lastCon .education {
-      width: 300px; }
+      width: 100%; }
   .aboutCon {
     width: 500px;
     margin: 3rem auto; }
@@ -7472,9 +7475,10 @@ hr {
     margin: 5rem 3rem;
     padding: none;
     height: auto;
-    width: 400px; }
+    width: 400px;
+    border: 1px solid blue; }
   .heading {
-    font-size: 2em;
+    font-size: 3em;
     width: 400px; }
   .education {
     width: 300px; }

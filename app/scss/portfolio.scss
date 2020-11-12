@@ -26,7 +26,10 @@ $screenCollapse:767px;
 
 html,
 body {
+
     scroll-behavior: smooth;
+
+    // overflow-x: hidden;
 
     height: 100%;
     background: $primary-color;
@@ -77,7 +80,6 @@ body {
 }
 
 .container {
-    background-colo: red;
 
     /* undertext color -develop and design*/
     .undertext {
@@ -262,7 +264,6 @@ body {
     padding: 1rem;
 
 
-    border: 1px solid red;
     margin-top: 1rem;
     padding-top: 3rem;
 
@@ -470,35 +471,36 @@ hr {
 // untill it hits, 
 @media screen and (max-width:400px) {
     .introCon .container {
-        margin-top: 3rem auto;
-        padding: 3rem;
+        margin:  1rem ;
+        margin-top: 5rem;
         height: auto;
         width: 300px;
-        // border: 1px solid red;
 
-    }
-
-    .heading {
-        font-size: small;
-        width: 300px;
-
-        h1 {
-            // background-color: yellow;
-            width: 300px;
+        border: 1px solid yellow;
+        .heading {
+            font-size: 20px;
+            background-color: red;
+            // margin: 1rem;
+            // padding-right: 4rem;
+            line-height: 1px;
+            width: 100%;
         }
     }
 
     .workCon {
         width: 300px;
-        margin: auto 3rem;
-        // border: 1px solid red;
+        margin: 1rem;
+        border: 1px solid red;
     }
 
     .lastCon {
+        margin:  1rem ;
+        margin-top: 2rem;
+        height: auto;
         width: 300px;
 
         .education {
-            width: 300px;
+            width: 100%;
         }
     }
 
@@ -539,11 +541,12 @@ hr {
         padding: none;
         height: auto;
         width: 400px;
+        border: 1px solid blue;
     }
 
     .heading {
 
-        font-size: 2em;
+        font-size: 3em;
         width: 400px;
     }
 
