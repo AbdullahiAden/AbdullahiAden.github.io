@@ -7391,7 +7391,7 @@ body {
       .quizContainer .imgCon {
         width: 300px;
         margin: auto; } }
-  @media (max-width: 767px) {
+  @media (min-width: 500px) {
     .quizContainer {
       width: 520px;
       grid-template-columns: 1fr;
@@ -7439,7 +7439,7 @@ body {
         margin: 0; }
         .quizContainer2 .project-text2 p {
           width: 320px; } }
-  @media (max-width: 767px) {
+  @media (min-width: 500px) {
     .quizContainer2 {
       display: flex;
       flex-direction: column;

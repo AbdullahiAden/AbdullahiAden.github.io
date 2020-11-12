@@ -8,6 +8,7 @@ $secondary-color:#0a272d;
 $light-blue: #34A1B9;
 $dark-primary: #000b11;
 
+// mixin
 @mixin projectBtns {
     border: 1px solid $light-blue;
     background-color: $primary-color;
@@ -25,7 +26,7 @@ $dark-primary: #000b11;
 
 // mixings media queries use case
 $mobile:420px;
-$screenCollapse:767px;
+$screenCollapse:500px;
 
 @mixin mobile {
     @media (max-width: #{$mobile}) {
@@ -35,7 +36,7 @@ $screenCollapse:767px;
 
 
 @mixin screenCollapse  {
-    @media (max-width: #{$screenCollapse}) {
+    @media (min-width: #{$screenCollapse}) {
         @content;
     }
 }
