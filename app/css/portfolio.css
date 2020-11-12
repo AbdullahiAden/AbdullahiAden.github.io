@@ -7161,6 +7161,7 @@ progress {
 
 html,
 body {
+  scroll-behavior: smooth;
   height: 100%;
   background: #00111b;
   font-family: kanit, sans-serif;

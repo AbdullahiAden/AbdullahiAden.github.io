@@ -26,8 +26,9 @@ $screenCollapse:767px;
 
 html,
 body {
-    height: 100%;
+    scroll-behavior: smooth;
 
+    height: 100%;
     background: $primary-color;
     font-family: $font-stack;
     color: white;
@@ -53,6 +54,7 @@ body {
     border-color: $light-blue;
     margin-right: 2rem;
 }
+
 .navbar-dark .navbar-brand {
     color: white;
 
@@ -584,27 +586,29 @@ hr {
 
 @media all and (min-width:1020px) {
 
-    
-div.introCon{
-    // font-size: 1.5rem;
-    margin: 7rem auto;
-    // width: 2000px;
-}
+
+    div.introCon {
+        // font-size: 1.5rem;
+        margin: 7rem auto;
+        // width: 2000px;
+    }
+
     .heading {
         margin-top: 5rem;
         width: 100%;
 
-        
-        h1{
+
+        h1 {
             font-size: 2rem;
-            .undertext{
+
+            .undertext {
                 font-size: 3rem;
             }
         }
 
     }
 
-    .education{
+    .education {
         width: 900px;
     }
 }
