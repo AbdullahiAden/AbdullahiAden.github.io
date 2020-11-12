@@ -27,6 +27,7 @@ $dark-primary: #000b11;
 // mixings media queries use case
 $mobile:420px;
 $screenCollapse:500px;
+$bigScreen:767px;
 
 @mixin mobile {
     @media (max-width: #{$mobile}) {
@@ -37,6 +38,11 @@ $screenCollapse:500px;
 
 @mixin screenCollapse  {
     @media (min-width: #{$screenCollapse}) {
+        @content;
+    }
+}
+@mixin bigScreen  {
+    @media (min-width: #{$bigScreen}) {
         @content;
     }
 }
@@ -421,6 +427,24 @@ body {
 
         }
     }
+    @include bigScreen {
+        width: 700px;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+        .project-text {
+            width: 700px;
+            padding: 1rem;
+            margin: 3rem auto 0 auto;
+
+        }
+
+        .imgCon {
+            width: 700px;
+            margin: auto;
+
+        }
+    }
 
 }
 
@@ -497,6 +521,26 @@ body {
 
             p {
                 width: 320px;
+            }
+        }
+    }
+    @include bigScreen {
+
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+
+        .imgCon2 {
+            width: 100%;
+        }
+
+        .project-text2 {
+            width: 100%;
+            margin: 0;
+
+
+            p {
+                width: 100%;
             }
         }
     }

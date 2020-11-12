@@ -7403,6 +7403,18 @@ body {
       .quizContainer .imgCon {
         width: 420px;
         margin: auto; } }
+  @media (min-width: 767px) {
+    .quizContainer {
+      width: 700px;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem; }
+      .quizContainer .project-text {
+        width: 700px;
+        padding: 1rem;
+        margin: 3rem auto 0 auto; }
+      .quizContainer .imgCon {
+        width: 700px;
+        margin: auto; } }
 
 .quizContainer2 {
   margin: auto;
@@ -7451,6 +7463,18 @@ body {
         margin: 0; }
         .quizContainer2 .project-text2 p {
           width: 320px; } }
+  @media (min-width: 767px) {
+    .quizContainer2 {
+      display: flex;
+      flex-direction: column;
+      width: 700px; }
+      .quizContainer2 .imgCon2 {
+        width: 100%; }
+      .quizContainer2 .project-text2 {
+        width: 100%;
+        margin: 0; }
+        .quizContainer2 .project-text2 p {
+          width: 100%; } }
 
 hr {
   border: 2px solid #34A1B9; }
