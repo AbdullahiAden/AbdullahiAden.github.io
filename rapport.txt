@@ -129,7 +129,11 @@
 
         1.4.3 (AA)	Använd tillräcklig kontrast mellan text och bakgrund
             -- Använt "contrast" hjälpmedel i chrome inspektorn. 
+            
 
         3.3.2 (A)	Skapa tydliga och klickbara fältetiketter
-            -- Har lagt fältetiketter övanför textfälten enligt denna punkt.
+            -- Har lagt fältetiketter övanför textfälten enligt denna riktlinje.
+            För varje fält i kontakt formuläret som  användarna ska fylla i information har jag
+            skapat en tydlig fältetikett (elementet label) som förklarar fältets funktion.
+            Jag har också kopplat fältetiketterna med textfälten, så att det går också att klicka på  fältetiketten och skriva i textfälten. 
 
