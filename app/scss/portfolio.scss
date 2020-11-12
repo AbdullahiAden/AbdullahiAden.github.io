@@ -220,27 +220,24 @@ body {
         }
 
         .viewBtn {
-            background-color: $light-blue;
-            color: $dark-primary;
-            margin: 1rem;
-
+            border: 1px solid $light-blue;
+            background-color: $primary-color;
+            color: white;
+            width: 100px;
+            margin:1rem ;
+    
+            box-shadow: inset 0 0 0 0 $dark-primary;
+            transition: ease-out 0.3s;
+    
             &:hover {
-                background-color: darken($color: $light-blue, $amount: 10);
                 color: white;
+                box-shadow: inset 100px 0 0 0 $dark-primary;
             }
+       
         }
 
         .sourceBtn {
-            position: relative;
-            width: 100px;
-            margin: 1rem;
-            color: white;
-            border: 1px solid $light-blue;
-
-
-            &:hover {
-                color: $light-blue;
-            }
+           @extend .viewBtn
         }
 
 
@@ -362,12 +359,11 @@ body {
         margin-top: 2rem;
         padding: 3rem;
         font-size: large;
-
-
         h4 {
             text-decoration: underline $light-blue;
         }
-    }
+        
+    } 
 
     .imgCon {
         margin-top: 2rem;
@@ -375,14 +371,18 @@ body {
 
     // mixings used here
     @include mobile {
-        width: 320px;
+        background-color: #fff;
+        width: 300px;
         grid-template-columns: 1fr;
         grid-gap: 1rem;
+        margin-left: 0;
 
         .project-text {
-            margin: 2rem auto 0 auto;
+            // margin: 2rem 1rem 0 1rem;
             // background-color: pink;
-            width: 320px;
+            width: 300px;
+            padding: 1rem;
+            margin:3rem auto 0 auto;
 
         }
 
@@ -402,10 +402,11 @@ body {
 
 // uses flexbox here
 .quizContainer2 {
+    background-color: yellow;
     margin: auto;
     display: flex;
     flex-direction: row-reverse;
-    width: 1000px;
+    width: 100px;
     justify-content: space-between;
     align-items: center;
 
@@ -414,6 +415,9 @@ body {
         margin: 2rem;
         height: fit-content;
         flex-direction: column;
+
+
+
 
         p {
             width: 400px;
@@ -436,9 +440,15 @@ body {
 
     // mixings for flexbox part
     @include mobile {
+
+
+        align-self: left;
         display: flex;
         flex-direction: column;
-        width: 320px;
+        width: 32px;
+
+        background-color: red;
+
 
         .imgCon2 {
             width: 320px;
@@ -541,7 +551,7 @@ hr {
         padding: none;
         height: auto;
         width: 400px;
-        border: 1px solid blue;
+        // border: 1px solid blue;
     }
 
     .heading {
@@ -552,7 +562,7 @@ hr {
 
     .education {
         width: 300px;
-        // border: 1px solid red;
+        border: 1px solid red;
     }
 
     .aboutCon {
