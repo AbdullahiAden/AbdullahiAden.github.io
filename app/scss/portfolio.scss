@@ -34,6 +34,13 @@ $screenCollapse:767px;
 }
 
 
+@mixin screenCollapse  {
+    @media (max-width: #{$screenCollapse}) {
+        @content;
+    }
+}
+
+
 
 html,
 body {
@@ -295,10 +302,14 @@ body {
 .contact-form {
     width: 500px;
     margin: auto;
+    padding: 1rem;
 
     margin-top: 1rem;
     padding-top: 4rem;
-
+    h2{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
     .form-control {
         margin-bottom: 1rem;
         background-color: $secondary-color;
@@ -359,7 +370,7 @@ body {
     .project-text {
         background-color: $dark-primary;
         margin-top: 2rem;
-        padding: 3rem;
+        padding: 3rem 3rem 0 3rem ;
         font-size: large;
 
         h4 {
@@ -387,6 +398,24 @@ body {
 
         .imgCon {
             width: 300px;
+            margin: auto;
+
+        }
+    }
+    @include screenCollapse {
+        width: 520px;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+        .project-text {
+            width: 420px;
+            padding: 1rem;
+            margin: 3rem auto 0 auto;
+
+        }
+
+        .imgCon {
+            width: 420px;
             margin: auto;
 
         }
@@ -426,6 +455,7 @@ body {
 
     .imgCon3 {
         padding-top: 1rem;
+       
     }
 
     // mixings for flexbox part
@@ -449,6 +479,28 @@ body {
             }
         }
     }
+    @include screenCollapse {
+
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+
+        .imgCon2 {
+            width: 420px;
+        }
+
+        .project-text2 {
+            width: 420px;
+            margin: 0;
+
+
+            p {
+                width: 320px;
+            }
+        }
+    }
+
+    
 
 }
 
@@ -469,7 +521,6 @@ hr {
 
         .heading {
             font-size: 20px;
-            // background-color: red;
             line-height: 1px;
             width: 100%;
         }
@@ -478,7 +529,6 @@ hr {
     .workCon {
         width: 300px;
         margin: 1rem;
-        border: 1px solid red;
     }
 
     .lastCon {
@@ -541,7 +591,6 @@ hr {
 
     .education {
         width: 300px;
-        border: 1px solid red;
     }
 
     .aboutCon {
@@ -550,6 +599,8 @@ hr {
     }
 
     .contact-form {
+        
+    
         width: 300px;
         margin: auto;
         flex-direction: column;
