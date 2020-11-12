@@ -374,7 +374,6 @@ body {
 
     // mixings used here
     @include mobile {
-        background-color: #fff;
         width: 320px;
         grid-template-columns: 1fr;
         grid-gap: 1rem;
@@ -470,7 +469,7 @@ hr {
 
         .heading {
             font-size: 20px;
-            background-color: red;
+            // background-color: red;
             line-height: 1px;
             width: 100%;
         }
