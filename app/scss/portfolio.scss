@@ -261,6 +261,12 @@ body {
     margin: auto;
     padding: 1rem;
 
+
+    border: 1px solid red;
+    margin-top: 1rem;
+    padding-top: 3rem;
+
+
     h5 {
         text-align: center;
         font-weight: 700;
@@ -275,6 +281,7 @@ body {
 .aboutCon {
     padding: 1rem;
 
+
     h4 {
         text-align: center;
 
@@ -288,6 +295,9 @@ body {
 .contact-form {
     width: 500px;
     margin: auto;
+
+    margin-top: 1rem;
+    padding-top: 4rem;
 
     .form-control {
         margin-bottom: 1rem;
@@ -423,7 +433,7 @@ body {
         padding-top: 1rem;
     }
 
-    // mixings for flesbox part
+    // mixings for flexbox part
     @include mobile {
         display: flex;
         flex-direction: column;
@@ -610,5 +620,7 @@ hr {
 
     .education {
         width: 900px;
+
+
     }
 }

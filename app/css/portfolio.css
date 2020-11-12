@@ -7305,7 +7305,10 @@ body {
   background-color: #000b11;
   width: 700px;
   margin: auto;
-  padding: 1rem; }
+  padding: 1rem;
+  border: 1px solid red;
+  margin-top: 1rem;
+  padding-top: 3rem; }
   .education h5, .education .h5 {
     text-align: center;
     font-weight: 700; }
@@ -7322,7 +7325,9 @@ body {
 
 .contact-form {
   width: 500px;
-  margin: auto; }
+  margin: auto;
+  margin-top: 1rem;
+  padding-top: 4rem; }
   .contact-form .form-control {
     margin-bottom: 1rem;
     background-color: #0a272d;
