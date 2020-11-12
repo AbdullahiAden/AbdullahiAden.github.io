@@ -7278,7 +7278,7 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       line-height: 1rem; }
-    .workCon .projects .viewBtn, .workCon .projects .sourceBtn {
+    .workCon .projects .viewBtn {
       border: 1px solid #34A1B9;
       background-color: #00111b;
       color: white;
@@ -7286,7 +7286,18 @@ body {
       margin: 1rem;
       box-shadow: inset 0 0 0 0 #000b11;
       transition: ease-out 0.3s; }
-      .workCon .projects .viewBtn:hover, .workCon .projects .sourceBtn:hover {
+      .workCon .projects .viewBtn:hover {
+        color: white;
+        box-shadow: inset 100px 0 0 0 #000b11; }
+    .workCon .projects .sourceBtn {
+      border: 1px solid #34A1B9;
+      background-color: #00111b;
+      color: white;
+      width: 100px;
+      margin: 1rem;
+      box-shadow: inset 0 0 0 0 #000b11;
+      transition: ease-out 0.3s; }
+      .workCon .projects .sourceBtn:hover {
         color: white;
         box-shadow: inset 100px 0 0 0 #000b11; }
 
@@ -7367,10 +7378,9 @@ body {
   @media (max-width: 420px) {
     .quizContainer {
       background-color: #fff;
-      width: 300px;
+      width: 320px;
       grid-template-columns: 1fr;
-      grid-gap: 1rem;
-      margin-left: 0; }
+      grid-gap: 1rem; }
       .quizContainer .project-text {
         width: 300px;
         padding: 1rem;
@@ -7378,18 +7388,12 @@ body {
       .quizContainer .imgCon {
         width: 300px;
         margin: auto; } }
-  @media (max-width: 767px) {
-    .quizContainer {
-      width: 500px;
-      grid-template-columns: 1fr;
-      grid-gap: 1rem; } }
 
 .quizContainer2 {
-  background-color: yellow;
   margin: auto;
   display: flex;
   flex-direction: row-reverse;
-  width: 100px;
+  width: 1000px;
   justify-content: space-between;
   align-items: center; }
   .quizContainer2 .project-text2 {
@@ -7410,11 +7414,9 @@ body {
     padding-top: 1rem; }
   @media (max-width: 420px) {
     .quizContainer2 {
-      align-self: left;
       display: flex;
       flex-direction: column;
-      width: 32px;
-      background-color: red; }
+      width: 320px; }
       .quizContainer2 .imgCon2 {
         width: 320px; }
       .quizContainer2 .project-text2 {
@@ -7422,11 +7424,6 @@ body {
         margin: 0; }
         .quizContainer2 .project-text2 p {
           width: 320px; } }
-  @media (max-width: 767px) {
-    .quizContainer2 {
-      display: flex;
-      flex-direction: column;
-      width: 500px; } }
 
 hr {
   border: 2px solid #34A1B9; }
