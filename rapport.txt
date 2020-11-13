@@ -7,21 +7,18 @@
     ramverk inom vilket man kan utnyttja olika processer och tekniker.  Scrum är en iterativ arbetsmetod som bygger på att kontinuerlig anpassa, 
     kontrollera risker och förbättra träffsäkerheten för ett projekt
 
-    Projektledingsmetoden baseras på tre grundstenar:
-    transparens, inspektion och adaption. Genom transparens ska alla involverade i projektet kunna
-    se hur processen ser ut. Inspektion innebär att Scrumanvändare ständigt ska granska
-    produktbacklogen för att hitta eventuella fel. Processen ska kunna justeras genom adaption till de
-    förändringar som görs om något anses vara fel.
+    Scrun baseras på tre pelare:
+        transparens - Genom transparens ska alla involverade i projektet kunna se hur processen ser ut.
+        inspektion - innebär att Scrumanvändare ständigt ska granska produktbacklogen för att hitta eventuella fel.
+        adaption -   Processen ska kunna justeras genom adaption till de förändringar som görs om något anses vara fel.
+
 
    * Artefakterna i Scrum
     Scrums artefakter representerar arbete eller värde på olika sätt som ger transparens och möjliggör granskning och anpassning.
 
-        Product backlog
-        Här listas krav och funktioner till produkten som så kallade User stories. Det är produktägarens ansvar att hantera backlogen och prioritera den.
-
-        Sprint backlog
-        Här listas user stories som är med i aktuell sprint.
-
+        Product backlog - Här listas krav och funktioner till produkten som så kallade User stories. Det är produktägarens ansvar att hantera backlogen och prioritera den.
+        Sprint backlog - Här listas user stories som är med i aktuell sprint.
+        
    * Några roller inom scrum är:
 
         Produktägare : är kravställaren och kommer vanligtvis från verksamheten men kan även vara en del i IT-organisationen. 
@@ -37,26 +34,31 @@
         Demo
         Retrospective
 
-    Grunden i Scrum är att arbetet och utvecklingen delas upp i olika tidsbestämda delar, så kallade sprintar. Varje sprint kan vara ca 2-4 veckor långa. Innan varje sprint har man en sprintplanering. Då plockar man ur ett antal user stories (krav och funktioner) från product backlog och lägger i sprint backlog. Det är den som definierar vad man ska utveckla under just den sprinten.
-    När sprinten är definierad så påbörjas den. Varje dag i sprinten börjar med ett daily scrum, ett stå-upp-möte där utvecklingsteamet, scrummastern och ofta produktägaren deltar. Mötet ska vara tidsbestämt, 15 minuter brukar vara lagom. Under mötet ska varje deltagare berätta vad de gjort sedan förra mötet, vad de ska göra under dagen och om personen har några hinder för att genomföra uppgifterna.
-    Efter varje sprint så har teamet en demo av leveransen. Här har verksamheten möjlighet att följa upp utvecklingen och komma med synpunkter. Förslag till förändringar och buggar läggs i backlogen och prioriteras av produktägaren. Efter varje sprint har teamet även ett retrospektiv där senaste sprinten gås igenom.
+    Grunden i Scrum är att arbetet och utvecklingen delas upp i olika tidsbestämda delar, så kallade sprintar. Varje sprint kan vara ca 2-4 veckor långa. 
+    Innan varje sprint har man en sprintplanering. Då plockar man ur ett antal user stories (krav och funktioner) från product backlog och lägger i sprint backlog. 
+    Det är den som definierar vad man ska utveckla under just den sprinten.
+
+    När sprinten är definierad så påbörjas den. Varje dag i sprinten börjar med ett daily scrum, ett stå-upp-möte där utvecklingsteamet, scrummastern och ofta produktägaren deltar.
+    Mötet ska vara tidsbestämt, 15 minuter brukar vara lagom. Under mötet ska varje deltagare berätta vad de gjort sedan förra mötet, 
+    vad de ska göra under dagen och om personen har några hinder för att genomföra uppgifterna.
+
+    Efter varje sprint så har teamet en demo av leveransen. Här har verksamheten möjlighet att följa upp utvecklingen och komma med synpunkter. 
+    Förslag till förändringar och buggar läggs i backlogen och prioriteras av produktägaren. Efter varje sprint har teamet även ett retrospektiv 
+    där senaste sprinten gås igenom och diskuteras vad som har varit bra, inte bra och vad som borde förbättras.
     Sedan börjar processen igång igen med sprintplanering för nästa sprint.
 
-   * Fördelar med Scrum
+   * Fördelar med Scrum:
+
         Tydligt ramverk
         Fokus på affärsnytta
         Flexibelt förändringsarbete 
 
-        En fördel med scrum är fokuseringen på affärsnytta och möjligheten att förändra projektet på ett strukturerat sätt.
+        Med scrum är fokuseringen på affärsnytta och möjligheten att förändra projektet på ett strukturerat sätt.
 
-        Kommunikationen ökar, arbetet blir mer transparent, det är flexiblare och lättare att anpassa
-        arbetet till nya krav och kunden är involverad i arbetsprocessen på ett bättre sätt. 
+        Kommunikationen ökar, arbetet blir mer transparent.
+        Kunden är involverad i arbetsprocessen på ett bättre sätt. 
 
-    * nackdelar/svårigheter med scrum:    
-
-        Stress
-        Det ligger stor press på utvecklarna att uppnå de krav som de tagit på sig under en sprint. Detta
-        gör det svårare att utveckla produkten korrekt 
+    * några nackdelar/svårigheter med scrum:    
 
         Olika geografiska platser
         Problematik uppstår kring stora projekt som är utspridda i globala organisationer. Den informella
@@ -82,6 +84,7 @@
     Eventuella mönster, symboler eller andra grafiska element
 
     * Fördelar med grafiska profil
+
     Det skapar identitet som tydliggör vem avsändaren är. 
     Ökar möjligheten att få kontakt med nya kunder. 
     Företag med en bra grafisk profil framställer sig själva som seriösa. 
@@ -102,22 +105,25 @@
     Begreppet tillgänglighet är centralt i Vägledningen för webbutveckling. Det gäller delvis med den breda betydelsen att information och tjänster
     ska gå att nå (servern åtkomlig, filformatet läsbart, säkerheten god, prestanda acceptabel och så vidare).
     Men framför allt gäller det här i betydelsen att information och tjänster ska kunna användas av alla människor 
-    oavsett till exempel funktionsnedsättning.
+    oavsett funktionsnedsättning.
 
     *Fördelar:
+
     Din webbsida/app blir enklare att använda och lättare att förstå.
     Koden blir robust och följer modern standard.
     Du gör internet till en bättre plats genom att inkludera alla.
 
     * nackdelar/svårigheter:
+
     Inte kunna designa en webbsida/app hur du vill,eller använda vilka färger eller layout du vill.
     Om din grafiska profil är emot dessa riktlinjer, så måste den också anpassas efter dessa riktlinjer.
 
 
     ** tillgänglighet som används i denna project
 
-        1:1.4.10 (AA) Skapa en flexibel layout som fungerar vid förstoring eller liten skärm
-            --Sidan är responsive
+        1.4.10 (AA) Skapa en flexibel layout som fungerar vid förstoring eller liten skärm
+            --Sidan är responsive, skapat en layout som fungerar på 320 px bred skärm utan att information 
+              eller funktionalitet går förlorad
 
         1.4.11 (AA)	Använd tillräckliga kontraster i komponenter och grafik
             --  sett till att det är tillräckligt kontrast mellan knapparna , förmular fält, ikoner
