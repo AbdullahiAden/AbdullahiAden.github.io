@@ -7186,12 +7186,12 @@ body {
 #navlinks {
   margin-right: 2rem; }
   #navlinks a {
+    position: relative;
     color: white;
-    font-weight: 400;
-    opacity: 90%; }
+    top: 0;
+    transition: top ease 0.5s; }
     #navlinks a:hover {
-      color: #34A1B9;
-      opacity: 100%; }
+      top: -5px; }
 
 .container {
   /* undertext color -develop and design*/ }

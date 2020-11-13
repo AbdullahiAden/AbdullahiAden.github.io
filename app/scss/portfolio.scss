@@ -23,6 +23,18 @@ $dark-primary: #000b11;
         box-shadow: inset 100px 0 0 0 $dark-primary;
     }
 }
+@mixin jump {
+    position: relative;
+    color: white;
+    top: 0;
+    transition: top ease 0.5s;
+
+    &:hover {
+        top: -5px;
+    }
+}
+
+
 
 // mixings media queries use case
 $mobile:420px;
@@ -93,14 +105,7 @@ body {
     margin-right: 2rem;
 
     a {
-        color: white;
-        font-weight: 400;
-        opacity: 90%;
-
-        &:hover {
-            color: $light-blue;
-            opacity: 100%;
-        }
+        @include jump();
     }
 }
 
@@ -178,14 +183,7 @@ body {
         }
 
         a {
-            position: relative;
-            color: white;
-            top: 0;
-            transition: top ease 0.5s;
-
-            &:hover {
-                top: -5px;
-            }
+            @include jump();
         }
     }
 }
