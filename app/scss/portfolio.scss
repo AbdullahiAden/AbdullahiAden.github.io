@@ -153,6 +153,7 @@ body {
     .workButt {
         @include projectBtns;
         width: 150px;
+        margin: 0;
 
     }
 }

@@ -7222,7 +7222,8 @@ body {
   margin: 1rem;
   box-shadow: inset 0 0 0 0 #000b11;
   transition: ease-out 0.3s;
-  width: 150px; }
+  width: 150px;
+  margin: 0; }
   .buttons .workButt:hover {
     color: white;
     box-shadow: inset 150px 0 0 0 #000b11; }
