@@ -7236,9 +7236,12 @@ body {
       position: relative;
       font-size: 1.5em; }
     .social-container .social-icons a {
-      color: white; }
+      position: relative;
+      color: white;
+      top: 0;
+      transition: top ease 0.5s; }
       .social-container .social-icons a:hover {
-        color: #34A1B9; }
+        top: -5px; }
 
 .workCon {
   padding: 1rem;

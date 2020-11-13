@@ -178,10 +178,13 @@ body {
         }
 
         a {
+            position: relative;
             color: white;
+            top: 0;
+            transition: top ease 0.5s;
 
             &:hover {
-                color: $light-blue;
+                top: -5px;
             }
         }
     }
