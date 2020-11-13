@@ -1,14 +1,15 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
+
+// sass variables 
 $body-color: #081319;
-$font-stack: kanit,
-sans-serif;
+$font-stack: kanit , sans-serif;
 $primary-color:#00111b;
 $secondary-color:#0a272d;
 $light-blue: #34A1B9;
 $dark-primary: #000b11;
 
-// mixin
+// mixins
 @mixin projectBtns {
     border: 1px solid $light-blue;
     background-color: $primary-color;
@@ -20,9 +21,10 @@ $dark-primary: #000b11;
 
     &:hover {
         color: white;
-        box-shadow: inset 100px 0 0 0 $dark-primary;
+        box-shadow: inset 150px 0 0 0 $dark-primary;
     }
 }
+
 @mixin jump {
     position: relative;
     color: white;
@@ -33,7 +35,6 @@ $dark-primary: #000b11;
         top: -5px;
     }
 }
-
 
 
 // mixings media queries use case
@@ -61,8 +62,7 @@ $bigScreen:767px;
 
 
 
-html,
-body {
+html,body {
 
     scroll-behavior: smooth;
 
@@ -148,19 +148,9 @@ body {
     }
 
     .workButt {
-        border: 1px solid $light-blue;
-        color: white;
+        @include projectBtns;
         width: 150px;
 
-        box-shadow: inset 0 0 0 0 $dark-primary;
-        transition: ease-out 0.3s;
-
-
-        &:hover {
-            // color: $light-blue;
-            color: white;
-            box-shadow: inset 150px 0 0 0 $dark-primary;
-        }
     }
 }
 
@@ -261,7 +251,7 @@ body {
     }
 }
 
-// education, contact form, about me sections
+// styles for last container with education, about, contact sections 
 .lastCon {
     margin: 3rem;
     background-color: $dark-primary;
@@ -270,6 +260,8 @@ body {
 
 
 }
+
+// education
 
 .education {
     background-color: darken($color: $primary-color, $amount: 2);
@@ -293,6 +285,8 @@ body {
     }
 }
 
+// abour me
+
 .aboutCon {
     padding: 1rem;
 
@@ -306,6 +300,8 @@ body {
     margin: 2rem auto;
     border: 1px solid white;
 }
+
+// contact form
 
 .contact-form {
     width: 500px;
@@ -358,7 +354,7 @@ body {
 
 }
 
-// * styles for projects html files, both quiz and acme
+// styles for projects html files, both quiz and acme
 
 // uses css grid
 .quizContainer {
@@ -383,7 +379,7 @@ body {
         margin-top: 2rem;
     }
 
-    // mixings used here
+    // mixings  media queries use case used here
     @include mobile {
         width: 320px;
         grid-template-columns: 1fr;
@@ -547,7 +543,7 @@ hr {
 }
 
 // * media queries
-// untill it hits, 
+// untill it hits 400px, mobile version 
 @media screen and (max-width:400px) {
     .introCon .container {
         margin: 1rem;
@@ -674,13 +670,12 @@ hr {
 
 }
 
+
+// abouve 1020px
 @media all and (min-width:1020px) {
 
-
     div.introCon {
-        // font-size: 1.5rem;
         margin: 7rem auto;
-        // width: 2000px;
     }
 
     .heading {

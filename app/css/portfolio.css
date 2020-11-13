@@ -7159,8 +7159,7 @@ progress {
   .d-print-none {
     display: none !important; } }
 
-html,
-body {
+html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   height: 100%;
@@ -7216,10 +7215,13 @@ body {
 
 .buttons .workButt {
   border: 1px solid #34A1B9;
+  background-color: #00111b;
   color: white;
-  width: 150px;
+  width: 100px;
+  margin: 1rem;
   box-shadow: inset 0 0 0 0 #000b11;
-  transition: ease-out 0.3s; }
+  transition: ease-out 0.3s;
+  width: 150px; }
   .buttons .workButt:hover {
     color: white;
     box-shadow: inset 150px 0 0 0 #000b11; }
@@ -7292,7 +7294,7 @@ body {
       transition: ease-out 0.3s; }
       .workCon .projects .viewBtn:hover {
         color: white;
-        box-shadow: inset 100px 0 0 0 #000b11; }
+        box-shadow: inset 150px 0 0 0 #000b11; }
     .workCon .projects .sourceBtn {
       border: 1px solid #34A1B9;
       background-color: #00111b;
@@ -7303,7 +7305,7 @@ body {
       transition: ease-out 0.3s; }
       .workCon .projects .sourceBtn:hover {
         color: white;
-        box-shadow: inset 100px 0 0 0 #000b11; }
+        box-shadow: inset 150px 0 0 0 #000b11; }
 
 .lastCon {
   margin: 3rem;
@@ -7360,7 +7362,7 @@ body {
       transition: ease-out 0.3s; }
       .contact-form .sendDiv .sendBtn:hover {
         color: white;
-        box-shadow: inset 100px 0 0 0 #000b11; }
+        box-shadow: inset 150px 0 0 0 #000b11; }
 
 .footer {
   background-color: #000b11;
