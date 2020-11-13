@@ -331,17 +331,9 @@ body {
         margin: 1rem auto 3rem auto;
 
         .sendBtn {
-            width: 100px;
-            background-color: $light-blue;
-            font-size: large;
-            border-radius: 5px;
-            color: $dark-primary;
+            @include projectBtns();
 
-            &:hover {
-                background-color: darken($color: $light-blue, $amount: 10);
-                color: white;
-
-            }
+      
         }
     }
 
