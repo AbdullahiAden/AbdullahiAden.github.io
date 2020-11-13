@@ -3,7 +3,8 @@
 
 // sass variables 
 $body-color: #081319;
-$font-stack: kanit , sans-serif;
+$font-stack: kanit,
+sans-serif;
 $primary-color:#00111b;
 $secondary-color:#0a272d;
 $light-blue: #34A1B9;
@@ -49,12 +50,13 @@ $bigScreen:767px;
 }
 
 
-@mixin screenCollapse  {
+@mixin screenCollapse {
     @media (min-width: #{$screenCollapse}) {
         @content;
     }
 }
-@mixin bigScreen  {
+
+@mixin bigScreen {
     @media (min-width: #{$bigScreen}) {
         @content;
     }
@@ -62,7 +64,8 @@ $bigScreen:767px;
 
 
 
-html,body {
+html,
+body {
 
     scroll-behavior: smooth;
 
@@ -310,10 +313,12 @@ html,body {
 
     margin-top: 1rem;
     padding-top: 4rem;
-    h2{
+
+    h2 {
         text-align: center;
         margin-bottom: 2rem;
     }
+
     .form-control {
         margin-bottom: 1rem;
         background-color: $secondary-color;
@@ -330,7 +335,7 @@ html,body {
         .sendBtn {
             @include projectBtns();
 
-      
+
         }
     }
 
@@ -366,7 +371,7 @@ html,body {
     .project-text {
         background-color: $dark-primary;
         margin-top: 2rem;
-        padding: 3rem 3rem 0 3rem ;
+        padding: 3rem 3rem 0 3rem;
         font-size: large;
 
         h4 {
@@ -398,6 +403,7 @@ html,body {
 
         }
     }
+
     @include screenCollapse {
         width: 520px;
         grid-template-columns: 1fr;
@@ -416,6 +422,7 @@ html,body {
 
         }
     }
+
     @include bigScreen {
         width: 700px;
         grid-template-columns: 1fr;
@@ -469,7 +476,7 @@ html,body {
 
     .imgCon3 {
         padding-top: 1rem;
-       
+
     }
 
     // mixings for flexbox part
@@ -493,6 +500,7 @@ html,body {
             }
         }
     }
+
     @include screenCollapse {
 
         display: flex;
@@ -513,6 +521,7 @@ html,body {
             }
         }
     }
+
     @include bigScreen {
 
         display: flex;
@@ -534,7 +543,7 @@ html,body {
         }
     }
 
-    
+
 
 }
 
@@ -632,8 +641,8 @@ hr {
     }
 
     .contact-form {
-        
-    
+
+
         width: 300px;
         margin: auto;
         flex-direction: column;
@@ -671,7 +680,7 @@ hr {
 }
 
 
-// abouve 1020px
+// above 1020px
 @media all and (min-width:1020px) {
 
     div.introCon {
