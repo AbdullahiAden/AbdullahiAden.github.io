@@ -120,16 +120,19 @@
             --Sidan är responsive
 
         1.4.11 (AA)	Använd tillräckliga kontraster i komponenter och grafik
-            --  sett till att det är tillräckligt kontrast mellan buttons och
-                bakgrunden med hjälp av inspektorn.
+            --  sett till att det är tillräckligt kontrast mellan knapparna , förmular fält, ikoner
+                och bakgrunden. 
 
         1.4.4 (AA)	Se till att text går att förstora utan problem
-            -- använder olika storlekar på typsnitt på olika skärmar
+            -- använder olika storlekar på typsnitt på olika skärmar,
+               Det går också att zooma in till 200% utan att innehållet inte hamnar utanför skärmen
+               eller krocka med andra saker 
 
 
         1.4.3 (AA)	Använd tillräcklig kontrast mellan text och bakgrund
-            -- Använt "contrast" hjälpmedel i chrome inspektorn. 
-            
+            -- Använt "WCAG color contrast checker extension" i chrome för att se till att   
+                kontrasten är över standard gränsvärdet på 4,5:1. 
+
 
         3.3.2 (A)	Skapa tydliga och klickbara fältetiketter
             -- Har lagt fältetiketter övanför textfälten enligt denna riktlinje.
