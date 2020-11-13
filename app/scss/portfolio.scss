@@ -64,33 +64,25 @@ $bigScreen:767px;
 
 
 
-html,
-body {
-
+html,body {
     scroll-behavior: smooth;
-
     overflow-x: hidden;
-
     height: 100%;
     background: $primary-color;
     font-family: $font-stack;
     color: white;
-
-
 }
 
 // navbar styles
 .bg-dark {
     background-color: $dark-primary !important;
     font-weight: 700;
-
 }
 
 // hamburger img 
 
 .bg-dark .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-
 }
 
 .bg-dark .navbar-toggler.navbar-toggler {
@@ -100,7 +92,6 @@ body {
 
 .navbar-dark .navbar-brand {
     color: white;
-
 }
 
 /* navlinks anchor tags */
@@ -113,7 +104,6 @@ body {
 }
 
 .container {
-
     /* undertext color -develop and design*/
     .undertext {
         color: #34A1B9;
@@ -121,9 +111,6 @@ body {
 
     .heading {
         font-size: 20px;
-
-
-
     }
 }
 
@@ -138,15 +125,12 @@ body {
         background-color: $light-blue;
         width: 150px;
         color: $dark-primary;
-
         box-shadow: inset 0 0 0 0 $dark-primary;
         transition: ease-out 0.3s;
 
         &:hover {
-            // background-color: darken($color: $light-blue, $amount: 10);
             color: white;
             box-shadow: inset 150px 0 0 0 $dark-primary;
-
         }
     }
 
@@ -154,7 +138,6 @@ body {
         @include projectBtns;
         width: 150px;
         margin: 0;
-
     }
 }
 
@@ -187,7 +170,6 @@ body {
     padding: 1rem;
     margin: 3rem;
 
-
     .workText {
         background-color: #00111b;
         background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
@@ -211,13 +193,11 @@ body {
         }
 
         .projectName {
-
             background-color: $secondary-color;
             height: 25px;
             width: fit-content;
             text-align: center;
             padding: auto;
-
             font-weight: 700;
             font-size: larger;
             line-height: 1rem;
@@ -236,21 +216,16 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             line-height: 1rem;
-
         }
 
         .viewBtn {
             // mixings
             @include projectBtns();
-
         }
 
         .sourceBtn {
             @include projectBtns();
-
-
         }
-
 
     }
 }
@@ -261,8 +236,6 @@ body {
     background-color: $dark-primary;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
-
 }
 
 // education
@@ -272,16 +245,12 @@ body {
     width: 700px;
     margin: auto;
     padding: 1rem;
-
-
     margin-top: 1rem;
     padding-top: 3rem;
-
 
     h5 {
         text-align: center;
         font-weight: 700;
-
     }
 
     p {
@@ -294,10 +263,8 @@ body {
 .aboutCon {
     padding: 1rem;
 
-
     h4 {
         text-align: center;
-
     }
 
     width: 700px;
@@ -311,7 +278,6 @@ body {
     width: 500px;
     margin: auto;
     padding: 1rem;
-
     margin-top: 1rem;
     padding-top: 4rem;
 
@@ -325,7 +291,6 @@ body {
         background-color: $secondary-color;
         border-radius: 5px;
         color: white;
-
     }
 
     .sendDiv {
@@ -335,12 +300,8 @@ body {
 
         .sendBtn {
             @include projectBtns();
-
-
         }
     }
-
-
 
 }
 
@@ -349,19 +310,14 @@ body {
 .footer {
     background-color: $dark-primary;
     flex-shrink: 0;
-
-
     margin-top: 6rem;
     padding: 1rem;
     color: grey;
     text-align: center;
     font-size: smaller;
-
-
 }
 
 // styles for projects html files, both quiz and acme
-
 // uses css grid
 .quizContainer {
     margin: 4rem auto;
@@ -401,7 +357,6 @@ body {
         .imgCon {
             width: 300px;
             margin: auto;
-
         }
     }
 
@@ -420,7 +375,6 @@ body {
         .imgCon {
             width: 420px;
             margin: auto;
-
         }
     }
 
@@ -433,13 +387,11 @@ body {
             width: 700px;
             padding: 1rem;
             margin: 3rem auto 0 auto;
-
         }
 
         .imgCon {
             width: 700px;
             margin: auto;
-
         }
     }
 
@@ -477,12 +429,10 @@ body {
 
     .imgCon3 {
         padding-top: 1rem;
-
     }
 
     // mixings for flexbox part
     @include mobile {
-
         display: flex;
         flex-direction: column;
         width: 320px;
@@ -494,7 +444,6 @@ body {
         .project-text2 {
             width: 320px;
             margin: 0;
-
 
             p {
                 width: 320px;
@@ -516,7 +465,6 @@ body {
             width: 420px;
             margin: 0;
 
-
             p {
                 width: 320px;
             }
@@ -524,7 +472,6 @@ body {
     }
 
     @include bigScreen {
-
         display: flex;
         flex-direction: column;
         width: 700px;
@@ -537,14 +484,11 @@ body {
             width: 100%;
             margin: 0;
 
-
             p {
                 width: 100%;
             }
         }
     }
-
-
 
 }
 
@@ -560,7 +504,6 @@ hr {
         margin-top: 5rem;
         height: auto;
         width: 300px;
-
 
         .heading {
             font-size: 20px;
@@ -597,7 +540,6 @@ hr {
         flex-direction: column;
 
         .row {
-
             width: 300px;
             display: flex;
             flex-direction: column;
@@ -627,7 +569,6 @@ hr {
     }
 
     .heading {
-
         font-size: 3em;
         width: 400px;
     }
@@ -642,14 +583,11 @@ hr {
     }
 
     .contact-form {
-
-
         width: 300px;
         margin: auto;
         flex-direction: column;
 
         .row {
-
             width: 300px;
             display: flex;
             flex-direction: column;
@@ -680,10 +618,8 @@ hr {
 
 }
 
-
 // above 1020px
 @media all and (min-width:1020px) {
-
     div.introCon {
         margin: 7rem auto;
     }
@@ -691,7 +627,6 @@ hr {
     .heading {
         margin-top: 5rem;
         width: 100%;
-
 
         h1 {
             font-size: 2rem;
@@ -705,7 +640,5 @@ hr {
 
     .education {
         width: 900px;
-
-
     }
 }

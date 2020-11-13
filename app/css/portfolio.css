@@ -7159,8 +7159,7 @@ progress {
   .d-print-none {
     display: none !important; } }
 
-html,
-body {
+html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   height: 100%;
