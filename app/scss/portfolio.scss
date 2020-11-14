@@ -325,6 +325,8 @@ html,body {
     display: grid;
     grid-template-columns: 1fr 2fr;
 
+   
+
     .project-text {
         background-color: $dark-primary;
         margin-top: 2rem;
@@ -340,7 +342,14 @@ html,body {
     .imgCon {
         margin-top: 2rem;
     }
+    .visitSite{
+        @include projectBtns();
+        width: 150px;
+        margin:auto;
+        letter-spacing: 5px;
+        font-size: 15px;
 
+    }
     // mixings  media queries use case used here
     @include mobile {
         width: 320px;
@@ -358,8 +367,15 @@ html,body {
             width: 300px;
             margin: auto;
         }
-    }
 
+          .visitSite{
+        @include projectBtns();
+        width: 150px;
+        margin:0 5rem ;
+
+    }
+    }
+  
     @include screenCollapse {
         width: 520px;
         grid-template-columns: 1fr;
@@ -375,6 +391,14 @@ html,body {
         .imgCon {
             width: 420px;
             margin: auto;
+        }
+        .visitSite{
+            @include projectBtns();
+            width: 150px;
+            margin-left:3rem;
+            letter-spacing: 5px;
+            font-size: 15px;
+    
         }
     }
 
